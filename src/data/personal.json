@@ -1,0 +1,26 @@
+{
+  "big3": {
+    "squat": 100.0,
+    "bench": 100.0,
+    "deadlift": 240.0,
+    "highbarSquat": 100.0,
+    "shoulderPress": 50.0
+  },
+  "profile": {
+    "heightCm": 172.0,
+    "weightKg": 70.0,
+    "mode": "リーンバルク",
+    "dailyIntensity": "2.中程度(デスクワーク.一日1時間程度歩く)",
+    "trainingLevel": "上級者.月に体重の0.5%増"
+  },
+  "nutrition": {
+    "maintenanceKcal": 2618.0,
+    "overKcal": 58.33333333,
+    "underKcal": 0.0,
+    "proteinPerMeal": 38.5,
+    "targetKcal": 2676.333333,
+    "p": 112.0,
+    "f": 58.17777778,
+    "c": 426.1833333
+  }
+}

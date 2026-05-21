@@ -1,0 +1,64 @@
+[
+  {
+    "week": 1,
+    "totalSets": 77.0,
+    "avgRpe": 5.8,
+    "totalReps": 173.0,
+    "totalKg": 0.0
+  },
+  {
+    "week": 2,
+    "totalSets": 82.0,
+    "avgRpe": 6.8,
+    "totalReps": 209.0,
+    "totalKg": 0.0
+  },
+  {
+    "week": 3,
+    "totalSets": 89.0,
+    "avgRpe": 6.8,
+    "totalReps": 234.0,
+    "totalKg": 0.0
+  },
+  {
+    "week": 4,
+    "totalSets": 93.0,
+    "avgRpe": 7.2,
+    "totalReps": 240.0,
+    "totalKg": 0.0
+  },
+  {
+    "week": 5,
+    "totalSets": 90.0,
+    "avgRpe": 7.6,
+    "totalReps": 233.0,
+    "totalKg": 0.0
+  },
+  {
+    "week": 6,
+    "totalSets": 87.0,
+    "avgRpe": 7.8,
+    "totalReps": 242.0,
+    "totalKg": 0.0
+  },
+  {
+    "week": 7,
+    "totalSets": 83.0,
+    "avgRpe": 8.2,
+    "totalReps": 190.0,
+    "totalKg": 0.0
+  },
+  {
+    "week": 8,
+    "totalSets": 58.0,
+    "avgRpe": 9.0,
+    "totalReps": 120.0,
+    "totalKg": 0.0
+  },
+  {
+    "week": 9,
+    "totalSets": 39.0,
+    "avgRpe": 9.875,
+    "totalReps": 79.0
+  }
+]

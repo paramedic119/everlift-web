@@ -1,0 +1,3382 @@
+[
+  {
+    "week": 1,
+    "days": [
+      {
+        "id": "Day 1 Upper",
+        "label": "Day 1 Upper",
+        "type": "Upper",
+        "exercises": [
+          {
+            "part": "胸",
+            "name": "バーベルベンチプレス",
+            "rpe": 6.0,
+            "percentRm": 0.78,
+            "sets": 1.0,
+            "repRange": "5",
+            "intervalSec": 0,
+            "refKg": 77.5,
+            "note": null,
+            "backoff": {
+              "rpe": 0.97,
+              "percentRm": 0.75,
+              "sets": 4.0,
+              "repRange": "5",
+              "intervalSec": 0,
+              "refKg": 75.0
+            }
+          },
+          {
+            "part": "背中",
+            "name": "ラットプルダウン",
+            "rpe": 7.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "9~11",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "背中",
+            "name": "チェストサポーテッドロウ",
+            "rpe": 7.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "9~11",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "肩",
+            "name": "サイドレイズ",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "12~14",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "肩",
+            "name": "フェイスプル",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "15~20",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "三頭",
+            "name": "ライイングトライセプスEX",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "10~12",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": "*時間が足りない場合二頭と三頭はスーパーセットでも可",
+            "backoff": null
+          },
+          {
+            "part": "二頭",
+            "name": "ダンベルカール",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "10~12",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          }
+        ]
+      },
+      {
+        "id": "Day 2 Lower",
+        "label": "Day 2 Lower",
+        "type": "Lower",
+        "exercises": [
+          {
+            "part": "四頭尻",
+            "name": "スクワット",
+            "rpe": 6.0,
+            "percentRm": 0.8,
+            "sets": 1.0,
+            "repRange": "4",
+            "intervalSec": 0,
+            "refKg": 80.0,
+            "note": null,
+            "backoff": {
+              "rpe": 0.97,
+              "percentRm": 0.775,
+              "sets": 3.0,
+              "repRange": "4",
+              "intervalSec": null,
+              "refKg": 77.5
+            }
+          },
+          {
+            "part": "ハム尻",
+            "name": "ルーマニアンデッドリフト",
+            "rpe": 7.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "10~12",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "四頭ハム尻",
+            "name": "ブルガリアンスクワット",
+            "rpe": 7.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "12~14",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "カーフ",
+            "name": "シーテッドカーフレイズ",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "15~20",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "腹筋",
+            "name": "アブローラー",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 2.0,
+            "repRange": "12~15",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": "*自重で行う種目は体重を記入してください。加重する場合は体重＋加重分の合計を記入",
+            "backoff": null
+          }
+        ]
+      },
+      {
+        "id": "Day 3 Upper",
+        "label": "Day 3 Upper",
+        "type": "Upper",
+        "exercises": [
+          {
+            "part": "肩",
+            "name": "バーチカルプレス",
+            "rpe": 6.0,
+            "percentRm": 0.75,
+            "sets": 1.0,
+            "repRange": "6",
+            "intervalSec": 0,
+            "refKg": 37.5,
+            "note": null,
+            "backoff": {
+              "rpe": 0.95,
+              "percentRm": 0.7,
+              "sets": 3.0,
+              "repRange": "6",
+              "intervalSec": null,
+              "refKg": 35.0
+            }
+          },
+          {
+            "part": "胸・三頭",
+            "name": "ナローベンチプレス",
+            "rpe": 6.0,
+            "percentRm": 0.7,
+            "sets": 1.0,
+            "repRange": "7",
+            "intervalSec": 0,
+            "refKg": 70.0,
+            "note": null,
+            "backoff": {
+              "rpe": 0.97,
+              "percentRm": 0.675,
+              "sets": 3.0,
+              "repRange": null,
+              "intervalSec": null,
+              "refKg": 67.5
+            }
+          },
+          {
+            "part": "背中",
+            "name": "ワンハンドロウ",
+            "rpe": 7.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "6~8",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "背中",
+            "name": "懸垂",
+            "rpe": 7.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "6~8",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": "*自重で行う種目は体重を記入してください。加重する場合は体重＋加重分の合計を記入してください。",
+            "backoff": null
+          },
+          {
+            "part": "胸",
+            "name": "ケーブルフライ",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "10~12",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "肩",
+            "name": "ケーブルサイドレイズ",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "12~15",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "二頭",
+            "name": "インクラインダンベルカール",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "10~12",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          }
+        ]
+      },
+      {
+        "id": "Day 4 Lower",
+        "label": "Day 4 Lower",
+        "type": "Lower",
+        "exercises": [
+          {
+            "part": "ハム尻",
+            "name": "デッドリフト",
+            "rpe": 5.0,
+            "percentRm": 0.76,
+            "sets": 1.0,
+            "repRange": "5",
+            "intervalSec": 0,
+            "refKg": 182.5,
+            "note": "*デッドリフト以外を選択した場合4秒かけてゆっくりと下ろしましょう",
+            "backoff": {
+              "rpe": 0.93,
+              "percentRm": 0.7083333333,
+              "sets": 3.0,
+              "repRange": "5",
+              "intervalSec": null,
+              "refKg": 170.0
+            }
+          },
+          {
+            "part": "四頭尻",
+            "name": "ハイバースクワット",
+            "rpe": 6.0,
+            "percentRm": 0.72,
+            "sets": 1.0,
+            "repRange": "8",
+            "intervalSec": 0,
+            "refKg": 72.5,
+            "note": null,
+            "backoff": {
+              "rpe": 0.97,
+              "percentRm": 0.7,
+              "sets": 2.0,
+              "repRange": "8",
+              "intervalSec": null,
+              "refKg": 70.0
+            }
+          },
+          {
+            "part": "カーフ",
+            "name": "スタンディングカーフレイズ",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "15~20",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "腹筋",
+            "name": "レッグレイズ",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 2.0,
+            "repRange": "15~20",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": "*自重で行う種目は体重を記入してください。加重する場合は体重＋加重分の合計を記入",
+            "backoff": null
+          },
+          {
+            "part": null,
+            "name": "Set",
+            "rpe": null,
+            "percentRm": null,
+            "sets": null,
+            "repRange": null,
+            "intervalSec": null,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": null,
+            "name": "%RM平均",
+            "rpe": 0.762,
+            "percentRm": null,
+            "sets": null,
+            "repRange": null,
+            "intervalSec": null,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": null,
+            "name": "RPE平均",
+            "rpe": 5.8,
+            "percentRm": null,
+            "sets": null,
+            "repRange": null,
+            "intervalSec": null,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "week": 2,
+    "days": [
+      {
+        "id": "Day 1 Upper",
+        "label": "Day 1 Upper",
+        "type": "Upper",
+        "exercises": [
+          {
+            "part": "胸",
+            "name": "バーベルベンチプレス",
+            "rpe": 7.0,
+            "percentRm": 0.78,
+            "sets": 1.0,
+            "repRange": "6",
+            "intervalSec": 0,
+            "refKg": 77.5,
+            "note": null,
+            "backoff": {
+              "rpe": 0.97,
+              "percentRm": 0.75,
+              "sets": 4.0,
+              "repRange": "6",
+              "intervalSec": 0,
+              "refKg": 75.0
+            }
+          },
+          {
+            "part": "背中",
+            "name": "ラットプルダウン",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "9~11",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "背中",
+            "name": "チェストサポーテッドロウ",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "9~11",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "肩",
+            "name": "サイドレイズ",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "12~14",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "肩",
+            "name": "フェイスプル",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "15~20",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "三頭",
+            "name": "ライイングトライセプスEX",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "10~12",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": "*時間が足りない場合二頭と三頭はスーパーセットでも可",
+            "backoff": null
+          },
+          {
+            "part": "二頭",
+            "name": "ダンベルカール",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "10~12",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          }
+        ]
+      },
+      {
+        "id": "Day 2 Lower",
+        "label": "Day 2 Lower",
+        "type": "Lower",
+        "exercises": [
+          {
+            "part": "四頭尻",
+            "name": "スクワット",
+            "rpe": 7.0,
+            "percentRm": 0.8,
+            "sets": 1.0,
+            "repRange": "5",
+            "intervalSec": 0,
+            "refKg": 80.0,
+            "note": null,
+            "backoff": {
+              "rpe": 0.95,
+              "percentRm": 0.75,
+              "sets": 4.0,
+              "repRange": "5",
+              "intervalSec": null,
+              "refKg": 75.0
+            }
+          },
+          {
+            "part": "ハム尻",
+            "name": "ルーマニアンデッドリフト",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "10~12",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "四頭ハム尻",
+            "name": "ブルガリアンスクワット",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "12~14",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "カーフ",
+            "name": "シーテッドカーフレイズ",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "15~20",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "腹筋",
+            "name": "アブローラー",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "12~15",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": "*自重で行う種目は体重を記入してください。加重する場合は体重＋加重分の合計を記入",
+            "backoff": null
+          }
+        ]
+      },
+      {
+        "id": "Day 3 Upper",
+        "label": "Day 3 Upper",
+        "type": "Upper",
+        "exercises": [
+          {
+            "part": "肩",
+            "name": "バーチカルプレス",
+            "rpe": 7.0,
+            "percentRm": 0.75,
+            "sets": 1.0,
+            "repRange": "7",
+            "intervalSec": 0,
+            "refKg": 37.5,
+            "note": null,
+            "backoff": {
+              "rpe": 0.95,
+              "percentRm": 0.7,
+              "sets": 3.0,
+              "repRange": "7",
+              "intervalSec": null,
+              "refKg": 35.0
+            }
+          },
+          {
+            "part": "胸・三頭",
+            "name": "ナローベンチプレス",
+            "rpe": 7.0,
+            "percentRm": 0.7,
+            "sets": 1.0,
+            "repRange": "8",
+            "intervalSec": 0,
+            "refKg": 70.0,
+            "note": null,
+            "backoff": {
+              "rpe": 0.97,
+              "percentRm": 0.675,
+              "sets": 3.0,
+              "repRange": "8",
+              "intervalSec": null,
+              "refKg": 67.5
+            }
+          },
+          {
+            "part": "背中",
+            "name": "懸垂",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "6~8",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": "自重で行う種目は体重を記入してください。加重する場合は体重＋加重分の合計を記入",
+            "backoff": null
+          },
+          {
+            "part": "背中",
+            "name": "ワンハンドロウ",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "6~8",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "胸",
+            "name": "ケーブルフライ",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "10~12",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "肩",
+            "name": "ケーブルサイドレイズ",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "12~15",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "二頭",
+            "name": "インクラインダンベルカール",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "10~12",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          }
+        ]
+      },
+      {
+        "id": "Day 4 Lower",
+        "label": "Day 4 Lower",
+        "type": "Lower",
+        "exercises": [
+          {
+            "part": "ハム尻",
+            "name": "デッドリフト",
+            "rpe": 6.0,
+            "percentRm": 0.76,
+            "sets": 1.0,
+            "repRange": "6",
+            "intervalSec": 0,
+            "refKg": 182.5,
+            "note": "*デッドリフト以外を選択した場合4秒かけてゆっくりと下ろしましょう",
+            "backoff": {
+              "rpe": 0.93,
+              "percentRm": 0.7083333333,
+              "sets": 4.0,
+              "repRange": "6",
+              "intervalSec": null,
+              "refKg": 170.0
+            }
+          },
+          {
+            "part": "四頭尻",
+            "name": "ハイバースクワット",
+            "rpe": 7.0,
+            "percentRm": 0.72,
+            "sets": 1.0,
+            "repRange": "9",
+            "intervalSec": 0,
+            "refKg": 72.5,
+            "note": null,
+            "backoff": {
+              "rpe": 0.95,
+              "percentRm": 0.7,
+              "sets": 3.0,
+              "repRange": "9",
+              "intervalSec": null,
+              "refKg": 70.0
+            }
+          },
+          {
+            "part": "カーフ",
+            "name": "スタンディングカーフレイズ",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "15~20",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "腹筋",
+            "name": "レッグレイズ",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "15~20",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": "*自重で行う種目は体重を記入してください。加重する場合は体重＋加重分の合計を記入",
+            "backoff": null
+          },
+          {
+            "part": null,
+            "name": "Set",
+            "rpe": null,
+            "percentRm": null,
+            "sets": null,
+            "repRange": null,
+            "intervalSec": null,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": null,
+            "name": "%RM平均",
+            "rpe": 0.762,
+            "percentRm": null,
+            "sets": null,
+            "repRange": null,
+            "intervalSec": null,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": null,
+            "name": "RPE平均",
+            "rpe": 6.8,
+            "percentRm": null,
+            "sets": null,
+            "repRange": null,
+            "intervalSec": null,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "week": 3,
+    "days": [
+      {
+        "id": "Day 1 Upper",
+        "label": "Day 1 Upper",
+        "type": "Upper",
+        "exercises": [
+          {
+            "part": "胸",
+            "name": "バーベルベンチプレス",
+            "rpe": 7.0,
+            "percentRm": 0.8,
+            "sets": 1.0,
+            "repRange": "5",
+            "intervalSec": 0,
+            "refKg": 80.0,
+            "note": null,
+            "backoff": {
+              "rpe": 0.95,
+              "percentRm": 0.75,
+              "sets": 5.0,
+              "repRange": "5",
+              "intervalSec": 0,
+              "refKg": 75.0
+            }
+          },
+          {
+            "part": "背中",
+            "name": "ラットプルダウン",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "10~12",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "背中",
+            "name": "チェストサポーテッドロウ",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "10~12",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "肩",
+            "name": "サイドレイズ",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "12~14",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "肩",
+            "name": "フェイスプル",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "15~20",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "三頭",
+            "name": "ライイングトライセプスEX",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "9~11",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "二頭",
+            "name": "ダンベルカール",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "12~14",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          }
+        ]
+      },
+      {
+        "id": "Day 2 Lower",
+        "label": "Day 2 Lower",
+        "type": "Lower",
+        "exercises": [
+          {
+            "part": "四頭尻",
+            "name": "スクワット",
+            "rpe": 7.0,
+            "percentRm": 0.78,
+            "sets": 1.0,
+            "repRange": "6",
+            "intervalSec": 0,
+            "refKg": 77.5,
+            "note": null,
+            "backoff": {
+              "rpe": 0.95,
+              "percentRm": 0.725,
+              "sets": 5.0,
+              "repRange": "6",
+              "intervalSec": null,
+              "refKg": 72.5
+            }
+          },
+          {
+            "part": "ハム尻",
+            "name": "ルーマニアンデッドリフト",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 4.0,
+            "repRange": "8~10",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "四頭ハム尻",
+            "name": "ブルガリアンスクワット",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 4.0,
+            "repRange": "8~10",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "カーフ",
+            "name": "シーテッドカーフレイズ",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "15~20",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "腹筋",
+            "name": "アブローラー",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "12~15",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          }
+        ]
+      },
+      {
+        "id": "Day 3 Upper",
+        "label": "Day 3 Upper",
+        "type": "Upper",
+        "exercises": [
+          {
+            "part": "肩",
+            "name": "バーチカルプレス",
+            "rpe": 7.0,
+            "percentRm": 0.73,
+            "sets": 1.0,
+            "repRange": "8",
+            "intervalSec": 0,
+            "refKg": 37.5,
+            "note": null,
+            "backoff": {
+              "rpe": 0.95,
+              "percentRm": 0.7,
+              "sets": 3.0,
+              "repRange": "8",
+              "intervalSec": null,
+              "refKg": 35.0
+            }
+          },
+          {
+            "part": "胸・三頭",
+            "name": "ナローベンチプレス",
+            "rpe": 7.0,
+            "percentRm": 0.72,
+            "sets": 1.0,
+            "repRange": "7",
+            "intervalSec": 0,
+            "refKg": 72.5,
+            "note": null,
+            "backoff": {
+              "rpe": 0.95,
+              "percentRm": 0.7,
+              "sets": 4.0,
+              "repRange": "7",
+              "intervalSec": null,
+              "refKg": 70.0
+            }
+          },
+          {
+            "part": "背中",
+            "name": "懸垂",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "8~10",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "背中",
+            "name": "ワンハンドロウ",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "8~10",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "胸",
+            "name": "ケーブルフライ",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "12~14",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "肩",
+            "name": "ケーブルサイドレイズ",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "12~15",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "二頭",
+            "name": "インクラインダンベルカール",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "12~14",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          }
+        ]
+      },
+      {
+        "id": "Day 4 Lower",
+        "label": "Day 4 Lower",
+        "type": "Lower",
+        "exercises": [
+          {
+            "part": "ハム尻",
+            "name": "デッドリフト",
+            "rpe": 6.0,
+            "percentRm": 0.76,
+            "sets": 1.0,
+            "repRange": "6",
+            "intervalSec": 0,
+            "refKg": 182.5,
+            "note": null,
+            "backoff": {
+              "rpe": 0.93,
+              "percentRm": 0.7083333333,
+              "sets": 4.0,
+              "repRange": "6",
+              "intervalSec": null,
+              "refKg": 170.0
+            }
+          },
+          {
+            "part": "四頭尻",
+            "name": "ハイバースクワット",
+            "rpe": 7.0,
+            "percentRm": 0.72,
+            "sets": 1.0,
+            "repRange": "9",
+            "intervalSec": 0,
+            "refKg": 72.5,
+            "note": null,
+            "backoff": {
+              "rpe": 0.97,
+              "percentRm": 0.7,
+              "sets": 3.0,
+              "repRange": "9",
+              "intervalSec": null,
+              "refKg": 70.0
+            }
+          },
+          {
+            "part": "カーフ",
+            "name": "スタンディングカーフレイズ",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 4.0,
+            "repRange": "15~20",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "腹筋",
+            "name": "レッグレイズ",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "15~20",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": null,
+            "name": "Set",
+            "rpe": null,
+            "percentRm": null,
+            "sets": null,
+            "repRange": null,
+            "intervalSec": null,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": null,
+            "name": "%RM平均",
+            "rpe": 0.758,
+            "percentRm": null,
+            "sets": null,
+            "repRange": null,
+            "intervalSec": null,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": null,
+            "name": "RPE平均",
+            "rpe": 6.8,
+            "percentRm": null,
+            "sets": null,
+            "repRange": null,
+            "intervalSec": null,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "week": 4,
+    "days": [
+      {
+        "id": "Day 1 Upper",
+        "label": "Day 1 Upper",
+        "type": "Upper",
+        "exercises": [
+          {
+            "part": "胸",
+            "name": "バーベルベンチプレス",
+            "rpe": 8.0,
+            "percentRm": 0.8,
+            "sets": 1.0,
+            "repRange": "6",
+            "intervalSec": 0,
+            "refKg": 80.0,
+            "note": null,
+            "backoff": {
+              "rpe": 0.92,
+              "percentRm": 0.725,
+              "sets": 5.0,
+              "repRange": "6",
+              "intervalSec": 0,
+              "refKg": 72.5
+            }
+          },
+          {
+            "part": "背中",
+            "name": "ラットプルダウン",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "10~12",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "背中",
+            "name": "チェストサポーテッドロウ",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "10~12",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "肩",
+            "name": "サイドレイズ",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "12~14",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "肩",
+            "name": "フェイスプル",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "15~20",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "三頭",
+            "name": "ライイングトライセプスEX",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "9~11",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "二頭",
+            "name": "ダンベルカール",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "12~14",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          }
+        ]
+      },
+      {
+        "id": "Day 2 Lower",
+        "label": "Day 2 Lower",
+        "type": "Lower",
+        "exercises": [
+          {
+            "part": "四頭尻",
+            "name": "スクワット",
+            "rpe": 7.0,
+            "percentRm": 0.82,
+            "sets": 1.0,
+            "repRange": "4",
+            "intervalSec": 0,
+            "refKg": 82.5,
+            "note": null,
+            "backoff": {
+              "rpe": 0.95,
+              "percentRm": 0.775,
+              "sets": 5.0,
+              "repRange": "4",
+              "intervalSec": null,
+              "refKg": 77.5
+            }
+          },
+          {
+            "part": "ハム尻",
+            "name": "ルーマニアンデッドリフト",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 4.0,
+            "repRange": "8~10",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "四頭ハム尻",
+            "name": "ブルガリアンスクワット",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 4.0,
+            "repRange": "8~10",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "カーフ",
+            "name": "シーテッドカーフレイズ",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "15~20",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "腹筋",
+            "name": "アブローラー",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "12~15",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          }
+        ]
+      },
+      {
+        "id": "Day 3 Upper",
+        "label": "Day 3 Upper",
+        "type": "Upper",
+        "exercises": [
+          {
+            "part": "肩",
+            "name": "バーチカルプレス",
+            "rpe": 7.0,
+            "percentRm": 0.77,
+            "sets": 1.0,
+            "repRange": "6",
+            "intervalSec": 0,
+            "refKg": 37.5,
+            "note": null,
+            "backoff": {
+              "rpe": 0.95,
+              "percentRm": 0.7,
+              "sets": 3.0,
+              "repRange": "6",
+              "intervalSec": null,
+              "refKg": 35.0
+            }
+          },
+          {
+            "part": "胸・三頭",
+            "name": "ナローベンチプレス",
+            "rpe": 8.0,
+            "percentRm": 0.72,
+            "sets": 1.0,
+            "repRange": "8",
+            "intervalSec": 0,
+            "refKg": 72.5,
+            "note": null,
+            "backoff": {
+              "rpe": 0.92,
+              "percentRm": 0.675,
+              "sets": 4.0,
+              "repRange": "8",
+              "intervalSec": null,
+              "refKg": 67.5
+            }
+          },
+          {
+            "part": "背中",
+            "name": "懸垂",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 4.0,
+            "repRange": "8~10",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "背中",
+            "name": "ワンハンドロウ",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 4.0,
+            "repRange": "8~10",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "胸",
+            "name": "ケーブルフライ",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "12~14",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "肩",
+            "name": "ケーブルサイドレイズ",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "15~20",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "二頭",
+            "name": "インクラインダンベルカール",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "12~14",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          }
+        ]
+      },
+      {
+        "id": "Day 4 Lower",
+        "label": "Day 4 Lower",
+        "type": "Lower",
+        "exercises": [
+          {
+            "part": "ハム尻",
+            "name": "デッドリフト",
+            "rpe": 7.0,
+            "percentRm": 0.78,
+            "sets": 1.0,
+            "repRange": "6",
+            "intervalSec": 0,
+            "refKg": 187.5,
+            "note": null,
+            "backoff": {
+              "rpe": 0.92,
+              "percentRm": 0.71875,
+              "sets": 5.0,
+              "repRange": "6",
+              "intervalSec": null,
+              "refKg": 172.5
+            }
+          },
+          {
+            "part": "四頭尻",
+            "name": "ハイバースクワット",
+            "rpe": 7.0,
+            "percentRm": 0.75,
+            "sets": 1.0,
+            "repRange": "8",
+            "intervalSec": 0,
+            "refKg": 75.0,
+            "note": null,
+            "backoff": {
+              "rpe": 0.95,
+              "percentRm": 0.725,
+              "sets": 4.0,
+              "repRange": "8",
+              "intervalSec": null,
+              "refKg": 72.5
+            }
+          },
+          {
+            "part": "カーフ",
+            "name": "スタンディングカーフレイズ",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 4.0,
+            "repRange": "15~20",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "腹筋",
+            "name": "レッグレイズ",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "15~20",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": null,
+            "name": "Set",
+            "rpe": null,
+            "percentRm": null,
+            "sets": null,
+            "repRange": null,
+            "intervalSec": null,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": null,
+            "name": "%RM平均",
+            "rpe": 0.784,
+            "percentRm": null,
+            "sets": null,
+            "repRange": null,
+            "intervalSec": null,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": null,
+            "name": "RPE平均",
+            "rpe": 7.2,
+            "percentRm": null,
+            "sets": null,
+            "repRange": null,
+            "intervalSec": null,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "week": 5,
+    "days": [
+      {
+        "id": "Day 1 Upper",
+        "label": "Day 1 Upper",
+        "type": "Upper",
+        "exercises": [
+          {
+            "part": "胸",
+            "name": "バーベルベンチプレス",
+            "rpe": 8.0,
+            "percentRm": 0.82,
+            "sets": 1.0,
+            "repRange": "5",
+            "intervalSec": 0,
+            "refKg": 82.5,
+            "note": null,
+            "backoff": {
+              "rpe": 0.92,
+              "percentRm": 0.75,
+              "sets": 5.0,
+              "repRange": "5",
+              "intervalSec": 0,
+              "refKg": 75.0
+            }
+          },
+          {
+            "part": "背中",
+            "name": "ラットプルダウン",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "8~10",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "背中",
+            "name": "チェストサポーテッドロウ",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "8~10",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "肩",
+            "name": "サイドレイズ",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 4.0,
+            "repRange": "10~12",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "肩",
+            "name": "フェイスプル",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "12~15",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "三頭",
+            "name": "ライイングトライセプスEX",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "8~10",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "二頭",
+            "name": "ダンベルカール",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "8~10",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          }
+        ]
+      },
+      {
+        "id": "Day 2 Lower",
+        "label": "Day 2 Lower",
+        "type": "Lower",
+        "exercises": [
+          {
+            "part": "四頭尻",
+            "name": "スクワット",
+            "rpe": 8.0,
+            "percentRm": 0.82,
+            "sets": 1.0,
+            "repRange": "5",
+            "intervalSec": 0,
+            "refKg": 82.5,
+            "note": null,
+            "backoff": {
+              "rpe": 0.92,
+              "percentRm": 0.75,
+              "sets": 5.0,
+              "repRange": "5",
+              "intervalSec": null,
+              "refKg": 75.0
+            }
+          },
+          {
+            "part": "ハム尻",
+            "name": "ルーマニアンデッドリフト",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 4.0,
+            "repRange": "8~10",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "四頭ハム尻",
+            "name": "ブルガリアンスクワット",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "14~16",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "カーフ",
+            "name": "シーテッドカーフレイズ",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "15~20",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "腹筋",
+            "name": "アブローラー",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "8~12",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          }
+        ]
+      },
+      {
+        "id": "Day 3 Upper",
+        "label": "Day 3 Upper",
+        "type": "Upper",
+        "exercises": [
+          {
+            "part": "肩",
+            "name": "バーチカルプレス",
+            "rpe": 8.0,
+            "percentRm": 0.77,
+            "sets": 1.0,
+            "repRange": "7",
+            "intervalSec": 0,
+            "refKg": 37.5,
+            "note": null,
+            "backoff": {
+              "rpe": 0.92,
+              "percentRm": 0.7,
+              "sets": 3.0,
+              "repRange": "7",
+              "intervalSec": null,
+              "refKg": 35.0
+            }
+          },
+          {
+            "part": "胸・三頭",
+            "name": "ナローベンチプレス",
+            "rpe": 8.0,
+            "percentRm": 0.74,
+            "sets": 1.0,
+            "repRange": "7",
+            "intervalSec": 0,
+            "refKg": 75.0,
+            "note": null,
+            "backoff": {
+              "rpe": 0.92,
+              "percentRm": 0.7,
+              "sets": 4.0,
+              "repRange": "7",
+              "intervalSec": null,
+              "refKg": 70.0
+            }
+          },
+          {
+            "part": "背中",
+            "name": "懸垂",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "7~9",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "背中",
+            "name": "ワンハンドロウ",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "7~9",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "胸",
+            "name": "ケーブルフライ",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "12~14",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "肩",
+            "name": "ケーブルサイドレイズ",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "15~20",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "二頭",
+            "name": "インクラインダンベルカール",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "14~16",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          }
+        ]
+      },
+      {
+        "id": "Day 4 Lower",
+        "label": "Day 4 Lower",
+        "type": "Lower",
+        "exercises": [
+          {
+            "part": "ハム尻",
+            "name": "デッドリフト",
+            "rpe": 7.0,
+            "percentRm": 0.8,
+            "sets": 1.0,
+            "repRange": "5",
+            "intervalSec": 0,
+            "refKg": 192.5,
+            "note": null,
+            "backoff": {
+              "rpe": 0.9,
+              "percentRm": 0.71875,
+              "sets": 5.0,
+              "repRange": "5",
+              "intervalSec": null,
+              "refKg": 172.5
+            }
+          },
+          {
+            "part": "四頭尻",
+            "name": "ハイバースクワット",
+            "rpe": 7.0,
+            "percentRm": 0.72,
+            "sets": 1.0,
+            "repRange": "9",
+            "intervalSec": 0,
+            "refKg": 72.5,
+            "note": null,
+            "backoff": {
+              "rpe": 0.92,
+              "percentRm": 0.675,
+              "sets": 4.0,
+              "repRange": "9",
+              "intervalSec": null,
+              "refKg": 67.5
+            }
+          },
+          {
+            "part": "カーフ",
+            "name": "スタンディングカーフレイズ",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 4.0,
+            "repRange": "15~20",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "腹筋",
+            "name": "レッグレイズ",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "15~20",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": null,
+            "name": "Set",
+            "rpe": null,
+            "percentRm": null,
+            "sets": null,
+            "repRange": null,
+            "intervalSec": null,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": null,
+            "name": "%RM平均",
+            "rpe": 0.786,
+            "percentRm": null,
+            "sets": null,
+            "repRange": null,
+            "intervalSec": null,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": null,
+            "name": "RPE平均",
+            "rpe": 7.6,
+            "percentRm": null,
+            "sets": null,
+            "repRange": null,
+            "intervalSec": null,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "week": 6,
+    "days": [
+      {
+        "id": "Day 1 Upper",
+        "label": "Day 1 Upper",
+        "type": "Upper",
+        "exercises": [
+          {
+            "part": "胸",
+            "name": "バーベルベンチプレス",
+            "rpe": 8.0,
+            "percentRm": 0.84,
+            "sets": 1.0,
+            "repRange": "4",
+            "intervalSec": 0,
+            "refKg": 85.0,
+            "note": null,
+            "backoff": {
+              "rpe": 0.92,
+              "percentRm": 0.775,
+              "sets": 5.0,
+              "repRange": "4",
+              "intervalSec": 0,
+              "refKg": 77.5
+            }
+          },
+          {
+            "part": "背中",
+            "name": "ラットプルダウン",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "8~10",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "背中",
+            "name": "チェストサポーテッドロウ",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "8~10",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "肩",
+            "name": "サイドレイズ",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 4.0,
+            "repRange": "10~12",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "肩",
+            "name": "フェイスプル",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "12~15",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "三頭",
+            "name": "ライイングトライセプスEX",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "8~10",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "二頭",
+            "name": "ダンベルカール",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "8~10",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          }
+        ]
+      },
+      {
+        "id": "Day 2 Lower",
+        "label": "Day 2 Lower",
+        "type": "Lower",
+        "exercises": [
+          {
+            "part": "四頭尻",
+            "name": "スクワット",
+            "rpe": 8.0,
+            "percentRm": 0.8,
+            "sets": 1.0,
+            "repRange": "6",
+            "intervalSec": 0,
+            "refKg": 80.0,
+            "note": null,
+            "backoff": {
+              "rpe": 0.92,
+              "percentRm": 0.725,
+              "sets": 4.0,
+              "repRange": "6",
+              "intervalSec": null,
+              "refKg": 72.5
+            }
+          },
+          {
+            "part": "ハム尻",
+            "name": "ルーマニアンデッドリフト",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "7~9",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "四頭ハム尻",
+            "name": "ブルガリアンスクワット",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "14~16",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "カーフ",
+            "name": "シーテッドカーフレイズ",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "15~20",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "腹筋",
+            "name": "アブローラー",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "8~12",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          }
+        ]
+      },
+      {
+        "id": "Day 3 Upper",
+        "label": "Day 3 Upper",
+        "type": "Upper",
+        "exercises": [
+          {
+            "part": "肩",
+            "name": "バーチカルプレス",
+            "rpe": 8.0,
+            "percentRm": 0.74,
+            "sets": 1.0,
+            "repRange": "8",
+            "intervalSec": 0,
+            "refKg": 37.5,
+            "note": null,
+            "backoff": {
+              "rpe": 0.9,
+              "percentRm": 0.7,
+              "sets": 3.0,
+              "repRange": "8",
+              "intervalSec": null,
+              "refKg": 35.0
+            }
+          },
+          {
+            "part": "胸・三頭",
+            "name": "ナローベンチプレス",
+            "rpe": 8.0,
+            "percentRm": 0.72,
+            "sets": 1.0,
+            "repRange": "8",
+            "intervalSec": 0,
+            "refKg": 72.5,
+            "note": null,
+            "backoff": {
+              "rpe": 0.92,
+              "percentRm": 0.675,
+              "sets": 4.0,
+              "repRange": "8",
+              "intervalSec": null,
+              "refKg": 67.5
+            }
+          },
+          {
+            "part": "背中",
+            "name": "懸垂",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "7~9",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "背中",
+            "name": "ワンハンドロウ",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "7~9",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "胸",
+            "name": "ケーブルフライ",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "14~18",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "肩",
+            "name": "ケーブルサイドレイズ",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "15~20",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "二頭",
+            "name": "インクラインダンベルカール",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "14~20",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          }
+        ]
+      },
+      {
+        "id": "Day 4 Lower",
+        "label": "Day 4 Lower",
+        "type": "Lower",
+        "exercises": [
+          {
+            "part": "ハム尻",
+            "name": "デッドリフト",
+            "rpe": 8.0,
+            "percentRm": 0.8,
+            "sets": 1.0,
+            "repRange": "6",
+            "intervalSec": 0,
+            "refKg": 192.5,
+            "note": null,
+            "backoff": {
+              "rpe": 0.88,
+              "percentRm": 0.7083333333,
+              "sets": 5.0,
+              "repRange": "6",
+              "intervalSec": null,
+              "refKg": 170.0
+            }
+          },
+          {
+            "part": "四頭尻",
+            "name": "ハイバースクワット",
+            "rpe": 7.0,
+            "percentRm": 0.73,
+            "sets": 1.0,
+            "repRange": "8",
+            "intervalSec": 0,
+            "refKg": 72.5,
+            "note": null,
+            "backoff": {
+              "rpe": 0.98,
+              "percentRm": 0.7,
+              "sets": 4.0,
+              "repRange": "8",
+              "intervalSec": null,
+              "refKg": 70.0
+            }
+          },
+          {
+            "part": "カーフ",
+            "name": "スタンディングカーフレイズ",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "15~20",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "腹筋",
+            "name": "レッグレイズ",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "15~20",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": null,
+            "name": "Set",
+            "rpe": null,
+            "percentRm": null,
+            "sets": null,
+            "repRange": null,
+            "intervalSec": null,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": null,
+            "name": "%RM平均",
+            "rpe": 0.782,
+            "percentRm": null,
+            "sets": null,
+            "repRange": null,
+            "intervalSec": null,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": null,
+            "name": "RPE平均",
+            "rpe": 7.8,
+            "percentRm": null,
+            "sets": null,
+            "repRange": null,
+            "intervalSec": null,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "week": 7,
+    "days": [
+      {
+        "id": "Day 1 Upper",
+        "label": "Day 1 Upper",
+        "type": "Upper",
+        "exercises": [
+          {
+            "part": "胸",
+            "name": "バーベルベンチプレス",
+            "rpe": 9.0,
+            "percentRm": 0.84,
+            "sets": 1.0,
+            "repRange": "5",
+            "intervalSec": 0,
+            "refKg": 85.0,
+            "note": null,
+            "backoff": {
+              "rpe": 0.92,
+              "percentRm": 0.775,
+              "sets": 4.0,
+              "repRange": "5",
+              "intervalSec": 0,
+              "refKg": 77.5
+            }
+          },
+          {
+            "part": "背中",
+            "name": "ラットプルダウン",
+            "rpe": 8.5,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "8~10",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "背中",
+            "name": "チェストサポーテッドロウ",
+            "rpe": 8.5,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "8~10",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "肩",
+            "name": "サイドレイズ",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "10~12",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "肩",
+            "name": "フェイスプル",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "12~15",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "三頭",
+            "name": "ライイングトライセプスEX",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "7~9",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "二頭",
+            "name": "ダンベルカール",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "7~9",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          }
+        ]
+      },
+      {
+        "id": "Day 2 Lower",
+        "label": "Day 2 Lower",
+        "type": "Lower",
+        "exercises": [
+          {
+            "part": "四頭尻",
+            "name": "スクワット",
+            "rpe": 8.0,
+            "percentRm": 0.84,
+            "sets": 1.0,
+            "repRange": "4",
+            "intervalSec": 0,
+            "refKg": 85.0,
+            "note": null,
+            "backoff": {
+              "rpe": 0.95,
+              "percentRm": 0.8,
+              "sets": 4.0,
+              "repRange": "4",
+              "intervalSec": null,
+              "refKg": 80.0
+            }
+          },
+          {
+            "part": "ハム尻",
+            "name": "ルーマニアンデッドリフト",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "7~9",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "四頭ハム尻",
+            "name": "ブルガリアンスクワット",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "10~12",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "カーフ",
+            "name": "シーテッドカーフレイズ",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "15~20",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "腹筋",
+            "name": "アブローラー",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "6~10",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          }
+        ]
+      },
+      {
+        "id": "Day 3 Upper",
+        "label": "Day 3 Upper",
+        "type": "Upper",
+        "exercises": [
+          {
+            "part": "肩",
+            "name": "バーチカルプレス",
+            "rpe": 9.0,
+            "percentRm": 0.8,
+            "sets": 1.0,
+            "repRange": "6",
+            "intervalSec": 0,
+            "refKg": 40.0,
+            "note": null,
+            "backoff": {
+              "rpe": 0.9,
+              "percentRm": 0.7,
+              "sets": 3.0,
+              "repRange": "6",
+              "intervalSec": null,
+              "refKg": 35.0
+            }
+          },
+          {
+            "part": "胸・三頭",
+            "name": "ナローベンチプレス",
+            "rpe": 8.0,
+            "percentRm": 0.76,
+            "sets": 1.0,
+            "repRange": "6",
+            "intervalSec": 0,
+            "refKg": 75.0,
+            "note": null,
+            "backoff": {
+              "rpe": 0.92,
+              "percentRm": 0.7,
+              "sets": 4.0,
+              "repRange": "6",
+              "intervalSec": null,
+              "refKg": 70.0
+            }
+          },
+          {
+            "part": "背中",
+            "name": "懸垂",
+            "rpe": 8.5,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "7~9",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "背中",
+            "name": "ワンハンドロウ",
+            "rpe": 8.5,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "7~9",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "胸",
+            "name": "ケーブルフライ",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "14~18",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "肩",
+            "name": "ケーブルサイドレイズ",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "18~22",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "二頭",
+            "name": "インクラインダンベルカール",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "15~20",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          }
+        ]
+      },
+      {
+        "id": "Day 4 Lower",
+        "label": "Day 4 Lower",
+        "type": "Lower",
+        "exercises": [
+          {
+            "part": "ハム尻",
+            "name": "デッドリフト",
+            "rpe": 8.0,
+            "percentRm": 0.82,
+            "sets": 1.0,
+            "repRange": "5",
+            "intervalSec": 0,
+            "refKg": 197.5,
+            "note": null,
+            "backoff": {
+              "rpe": 0.88,
+              "percentRm": 0.7291666667,
+              "sets": 4.0,
+              "repRange": "5",
+              "intervalSec": null,
+              "refKg": 175.0
+            }
+          },
+          {
+            "part": "四頭尻",
+            "name": "ハイバースクワット",
+            "rpe": 7.0,
+            "percentRm": 0.73,
+            "sets": 1.0,
+            "repRange": "9",
+            "intervalSec": 0,
+            "refKg": 72.5,
+            "note": null,
+            "backoff": {
+              "rpe": 1.0,
+              "percentRm": 0.725,
+              "sets": 3.0,
+              "repRange": "9",
+              "intervalSec": null,
+              "refKg": 72.5
+            }
+          },
+          {
+            "part": "カーフ",
+            "name": "スタンディングカーフレイズ",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "15~20",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "腹筋",
+            "name": "レッグレイズ",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "15~20",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": null,
+            "name": "Set",
+            "rpe": null,
+            "percentRm": null,
+            "sets": null,
+            "repRange": null,
+            "intervalSec": null,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": null,
+            "name": "%RM平均",
+            "rpe": 0.806,
+            "percentRm": null,
+            "sets": null,
+            "repRange": null,
+            "intervalSec": null,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": null,
+            "name": "RPE平均",
+            "rpe": 8.2,
+            "percentRm": null,
+            "sets": null,
+            "repRange": null,
+            "intervalSec": null,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "week": 8,
+    "days": [
+      {
+        "id": "Day 1 Upper",
+        "label": "Day 1 Upper",
+        "type": "Upper",
+        "exercises": [
+          {
+            "part": "胸",
+            "name": "バーベルベンチプレス",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 1.0,
+            "repRange": "4",
+            "intervalSec": 0,
+            "refKg": 87.5,
+            "note": null,
+            "backoff": {
+              "rpe": 0.95,
+              "percentRm": 0.825,
+              "sets": 2.0,
+              "repRange": "4",
+              "intervalSec": 0,
+              "refKg": 82.5
+            }
+          },
+          {
+            "part": "背中",
+            "name": "ラットプルダウン",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 2.0,
+            "repRange": "8~10",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "背中",
+            "name": "チェストサポーテッドロウ",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 2.0,
+            "repRange": "8~10",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "肩",
+            "name": "サイドレイズ",
+            "rpe": 10.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "10~12",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "肩",
+            "name": "フェイスプル",
+            "rpe": 10.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "12~15",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "三頭",
+            "name": "ライイングトライセプスEX",
+            "rpe": 10.0,
+            "percentRm": null,
+            "sets": 2.0,
+            "repRange": "7~9",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": "*時間が足りない場合二頭と三頭はスーパーセットでも可",
+            "backoff": null
+          },
+          {
+            "part": "二頭",
+            "name": "ダンベルカール",
+            "rpe": 10.0,
+            "percentRm": null,
+            "sets": 2.0,
+            "repRange": "7~9",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          }
+        ]
+      },
+      {
+        "id": "Day 2 Lower",
+        "label": "Day 2 Lower",
+        "type": "Lower",
+        "exercises": [
+          {
+            "part": "四頭尻",
+            "name": "スクワット",
+            "rpe": 9.0,
+            "percentRm": 0.84,
+            "sets": 1.0,
+            "repRange": "5",
+            "intervalSec": 0,
+            "refKg": 85.0,
+            "note": null,
+            "backoff": {
+              "rpe": 0.95,
+              "percentRm": 0.8,
+              "sets": 2.0,
+              "repRange": "5",
+              "intervalSec": null,
+              "refKg": 80.0
+            }
+          },
+          {
+            "part": "ハム尻",
+            "name": "ルーマニアンデッドリフト",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 2.0,
+            "repRange": "7~9",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "四頭ハム尻",
+            "name": "ブルガリアンスクワット",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 2.0,
+            "repRange": "10~12",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "カーフ",
+            "name": "シーテッドカーフレイズ",
+            "rpe": 10.0,
+            "percentRm": null,
+            "sets": 2.0,
+            "repRange": "15~20",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "腹筋",
+            "name": "アブローラー",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 2.0,
+            "repRange": "6~10",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": "*自重で行う種目は体重を記入してください。加重する場合は体重＋加重分の合計を記入",
+            "backoff": null
+          }
+        ]
+      },
+      {
+        "id": "Day 3 Upper",
+        "label": "Day 3 Upper",
+        "type": "Upper",
+        "exercises": [
+          {
+            "part": "肩",
+            "name": "バーチカルプレス",
+            "rpe": 9.0,
+            "percentRm": 0.77,
+            "sets": 1.0,
+            "repRange": "7",
+            "intervalSec": 0,
+            "refKg": 37.5,
+            "note": null,
+            "backoff": {
+              "rpe": 0.95,
+              "percentRm": 0.7,
+              "sets": 2.0,
+              "repRange": "7",
+              "intervalSec": null,
+              "refKg": 35.0
+            }
+          },
+          {
+            "part": "胸・三頭",
+            "name": "ナローベンチプレス",
+            "rpe": 9.0,
+            "percentRm": 0.76,
+            "sets": 1.0,
+            "repRange": "5",
+            "intervalSec": 0,
+            "refKg": 75.0,
+            "note": null,
+            "backoff": {
+              "rpe": 0.95,
+              "percentRm": 0.725,
+              "sets": 2.0,
+              "repRange": "5",
+              "intervalSec": null,
+              "refKg": 72.5
+            }
+          },
+          {
+            "part": "背中",
+            "name": "懸垂",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 2.0,
+            "repRange": "7~9",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "背中",
+            "name": "ワンハンドロウ",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 2.0,
+            "repRange": "7~9",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "胸",
+            "name": "ケーブルフライ",
+            "rpe": 10.0,
+            "percentRm": null,
+            "sets": 2.0,
+            "repRange": "14~18",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "肩",
+            "name": "ケーブルサイドレイズ",
+            "rpe": 10.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "18~22",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "二頭",
+            "name": "インクラインダンベルカール",
+            "rpe": 10.0,
+            "percentRm": null,
+            "sets": 2.0,
+            "repRange": "15~20",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          }
+        ]
+      },
+      {
+        "id": "Day 4 Lower",
+        "label": "Day 4 Lower",
+        "type": "Lower",
+        "exercises": [
+          {
+            "part": "ハム尻",
+            "name": "デッドリフト",
+            "rpe": 9.0,
+            "percentRm": 0.82,
+            "sets": 1.0,
+            "repRange": "6",
+            "intervalSec": 0,
+            "refKg": 197.5,
+            "note": "*デッドリフト以外を選択した場合4秒かけてゆっくりと下ろしましょう",
+            "backoff": {
+              "rpe": 0.91,
+              "percentRm": 0.75,
+              "sets": 2.0,
+              "repRange": "6",
+              "intervalSec": null,
+              "refKg": 180.0
+            }
+          },
+          {
+            "part": "四頭尻",
+            "name": "ハイバースクワット",
+            "rpe": 9.0,
+            "percentRm": 0.75,
+            "sets": 1.0,
+            "repRange": "8",
+            "intervalSec": 0,
+            "refKg": 75.0,
+            "note": null,
+            "backoff": {
+              "rpe": 0.95,
+              "percentRm": 0.725,
+              "sets": 2.0,
+              "repRange": "8",
+              "intervalSec": null,
+              "refKg": 72.5
+            }
+          },
+          {
+            "part": "カーフ",
+            "name": "スタンディングカーフレイズ",
+            "rpe": 10.0,
+            "percentRm": null,
+            "sets": 2.0,
+            "repRange": "15~20",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "腹筋",
+            "name": "レッグレイズ",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 2.0,
+            "repRange": "15~20",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": "*自重で行う種目は体重を記入してください。加重する場合は体重＋加重分の合計を記入",
+            "backoff": null
+          },
+          {
+            "part": null,
+            "name": "Set",
+            "rpe": null,
+            "percentRm": null,
+            "sets": null,
+            "repRange": null,
+            "intervalSec": null,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": null,
+            "name": "%RM平均",
+            "rpe": 0.795,
+            "percentRm": null,
+            "sets": null,
+            "repRange": null,
+            "intervalSec": null,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": null,
+            "name": "RPE平均",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": null,
+            "repRange": null,
+            "intervalSec": null,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "week": 9,
+    "days": [
+      {
+        "id": "Day 1 Upper",
+        "label": "Day 1 Upper",
+        "type": "Upper",
+        "exercises": [
+          {
+            "part": "胸",
+            "name": "バーベルベンチプレス",
+            "rpe": 10.0,
+            "percentRm": null,
+            "sets": 1.0,
+            "repRange": "AMRAP",
+            "intervalSec": 0,
+            "refKg": 87.5,
+            "note": null,
+            "backoff": {
+              "rpe": 0.9,
+              "percentRm": 0.8,
+              "sets": 2.0,
+              "repRange": "4",
+              "intervalSec": 0,
+              "refKg": 80.0
+            }
+          },
+          {
+            "part": "背中",
+            "name": "チェストサポーテッドロウ",
+            "rpe": 7.0,
+            "percentRm": null,
+            "sets": 2.0,
+            "repRange": "10~12",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "肩",
+            "name": "フェイスプル",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "10~12",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "二頭",
+            "name": "ダンベルカール",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 2.0,
+            "repRange": "10~12",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          }
+        ]
+      },
+      {
+        "id": "Day 2 Lower",
+        "label": "Day 2 Lower",
+        "type": "Lower",
+        "exercises": [
+          {
+            "part": "四頭尻",
+            "name": "スクワット",
+            "rpe": 10.0,
+            "percentRm": 0.85,
+            "sets": 1.0,
+            "repRange": "AMRAP",
+            "intervalSec": 0,
+            "refKg": 85.0,
+            "note": null,
+            "backoff": {
+              "rpe": 0.9,
+              "percentRm": 0.775,
+              "sets": 2.0,
+              "repRange": "5",
+              "intervalSec": null,
+              "refKg": 77.5
+            }
+          },
+          {
+            "part": "ハム尻",
+            "name": "ルーマニアンデッドリフト",
+            "rpe": 9.0,
+            "percentRm": null,
+            "sets": 2.0,
+            "repRange": "10~12",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "カーフ",
+            "name": "シーテッドカーフレイズ",
+            "rpe": 10.0,
+            "percentRm": null,
+            "sets": 2.0,
+            "repRange": "15~20",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          }
+        ]
+      },
+      {
+        "id": "Day 3 Upper",
+        "label": "Day 3 Upper",
+        "type": "Upper",
+        "exercises": [
+          {
+            "part": "肩",
+            "name": "バーチカルプレス",
+            "rpe": 10.0,
+            "percentRm": 0.8,
+            "sets": 1.0,
+            "repRange": "AMRAP",
+            "intervalSec": 0,
+            "refKg": 40.0,
+            "note": null,
+            "backoff": {
+              "rpe": 0.85,
+              "percentRm": 0.7,
+              "sets": 2.0,
+              "repRange": "7",
+              "intervalSec": null,
+              "refKg": 35.0
+            }
+          },
+          {
+            "part": "背中",
+            "name": "懸垂",
+            "rpe": 7.0,
+            "percentRm": null,
+            "sets": 2.0,
+            "repRange": "2020-07-09T00:00:00",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "胸・三頭",
+            "name": "ナローベンチプレス",
+            "rpe": 7.0,
+            "percentRm": null,
+            "sets": 2.0,
+            "repRange": "9~11",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "肩",
+            "name": "ケーブルサイドレイズ",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 3.0,
+            "repRange": "12~20",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          }
+        ]
+      },
+      {
+        "id": "Day 4 Lower",
+        "label": "Day 4 Lower",
+        "type": "Lower",
+        "exercises": [
+          {
+            "part": "ハム尻",
+            "name": "デッドリフト",
+            "rpe": 9.5,
+            "percentRm": 0.85,
+            "sets": 1.0,
+            "repRange": "AMRAP",
+            "intervalSec": 0,
+            "refKg": 205.0,
+            "note": "*デッドリフト以外を選択した場合4秒かけてゆっくりと下ろしましょう",
+            "backoff": {
+              "rpe": 0.93,
+              "percentRm": 0.7916666667,
+              "sets": 2.0,
+              "repRange": "6",
+              "intervalSec": null,
+              "refKg": 190.0
+            }
+          },
+          {
+            "part": "四頭尻",
+            "name": "ハイバースクワット",
+            "rpe": 6.0,
+            "percentRm": 0.7,
+            "sets": 1.0,
+            "repRange": "8",
+            "intervalSec": 0,
+            "refKg": 70.0,
+            "note": null,
+            "backoff": {
+              "rpe": 1.0,
+              "percentRm": 0.7,
+              "sets": 2.0,
+              "repRange": "8",
+              "intervalSec": null,
+              "refKg": 70.0
+            }
+          },
+          {
+            "part": "カーフ",
+            "name": "スタンディングカーフレイズ",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 2.0,
+            "repRange": "15~20",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": "腹筋",
+            "name": "レッグレイズ",
+            "rpe": 8.0,
+            "percentRm": null,
+            "sets": 2.0,
+            "repRange": "15~20",
+            "intervalSec": 0,
+            "refKg": null,
+            "note": "*自重で行う種目は体重を記入してください。加重する場合は体重＋加重分の合計を記入",
+            "backoff": null
+          },
+          {
+            "part": null,
+            "name": "Set",
+            "rpe": null,
+            "percentRm": null,
+            "sets": null,
+            "repRange": null,
+            "intervalSec": null,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": null,
+            "name": "%RM平均",
+            "rpe": 0.8,
+            "percentRm": null,
+            "sets": null,
+            "repRange": null,
+            "intervalSec": null,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          },
+          {
+            "part": null,
+            "name": "RPE平均",
+            "rpe": 9.875,
+            "percentRm": null,
+            "sets": null,
+            "repRange": null,
+            "intervalSec": null,
+            "refKg": null,
+            "note": null,
+            "backoff": null
+          }
+        ]
+      }
+    ]
+  }
+]
