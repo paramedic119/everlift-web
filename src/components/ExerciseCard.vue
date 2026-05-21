@@ -1,8 +1,17 @@
 <template>
   <section class="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-3 mb-3 shadow-sm">
     <header class="flex items-baseline gap-2 mb-2">
-      <span v-if="ex.part" class="text-[10px] px-1.5 py-0.5 rounded bg-indigo-100 text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300">{{ ex.part }}</span>
-      <h3 class="font-semibold text-sm">{{ ex.name }}</h3>
+      <span v-if="ex.part" class="text-[10px] px-1.5 py-0.5 rounded bg-indigo-100 text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300 shrink-0">{{ ex.part }}</span>
+      <div class="flex-1 min-w-0">
+        <template v-if="alternatives.length > 1">
+          <select :value="displayName"
+            @change="onChoose(($event.target as HTMLSelectElement).value)"
+            class="font-semibold text-sm bg-transparent border-b border-dashed border-indigo-400 dark:border-indigo-500 pr-1 w-full truncate">
+            <option v-for="opt in alternatives" :key="opt" :value="opt">{{ opt }}</option>
+          </select>
+        </template>
+        <h3 v-else class="font-semibold text-sm">{{ displayName }}</h3>
+      </div>
     </header>
     <dl class="grid grid-cols-4 gap-y-1 gap-x-2 text-[11px] text-slate-500 dark:text-slate-400 mb-2">
       <div v-if="ex.rpe != null"><dt class="inline">RPE</dt><dd class="inline ml-1 text-slate-700 dark:text-slate-200 tabular-nums">{{ ex.rpe }}</dd></div>
@@ -35,16 +44,27 @@
 import { computed } from "vue";
 import SetRow from "./SetRow.vue";
 import { usePersonal } from "../stores/personal";
+import { useExerciseChoices } from "../stores/exerciseChoices";
 import { calcRefKg, calcBackoffRefKg } from "../utils/calcRefKg";
+import alternativesData from "../data/alternatives.json";
 import type { Exercise, ExerciseLog, SetLog } from "../types";
 
 const props = defineProps<{ ex: Exercise; log: ExerciseLog }>();
 const emit = defineEmits<{ (e: "updateSet", i: number, patch: Partial<SetLog>): void; (e: "toggleSet", i: number): void }>();
 
 const personal = usePersonal();
+const exChoices = useExerciseChoices();
+const alts = alternativesData as Record<string, string[]>;
+
+const alternatives = computed(() => alts[props.ex.name] ?? []);
+const displayName = computed(() => exChoices.chosen(props.ex.name));
 const mainSets = computed(() => props.ex.sets ?? 1);
-const mainRefKg = computed(() => calcRefKg(props.ex, personal.state.data));
-const backoffRefKg = computed(() => calcBackoffRefKg(props.ex, personal.state.data));
+const mainRefKg = computed(() => calcRefKg(props.ex, personal.state.data, displayName.value));
+const backoffRefKg = computed(() => calcBackoffRefKg(props.ex, personal.state.data, displayName.value));
+
+function onChoose(name: string) {
+  exChoices.setChoice(props.ex.name, name);
+}
 
 function pct(v: number) { return (v * 100).toFixed(0) + "%"; }
 function fmt(sec: number) {
