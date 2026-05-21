@@ -13,30 +13,31 @@
       <div v-if="ex.refKg != null"><dt class="inline">参考</dt><dd class="inline ml-1 text-slate-700 dark:text-slate-200 tabular-nums">{{ ex.refKg }}kg</dd></div>
     </dl>
     <div class="border-t border-slate-100 dark:border-slate-800 pt-1">
-      <SetRow v-for="(s, i) in log.sets" :key="i" :index="i" :log="s" :ref-kg="ex.refKg"
-        @update="patch => emit('updateSet', i, patch)"
-        @toggle="emit('toggleSet', i)" />
+      <template v-for="(s, i) in log.sets" :key="i">
+        <div v-if="ex.backoff && i === mainSets" class="flex items-center gap-2 mt-2 mb-1">
+          <span class="text-[10px] px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-500">Backoff</span>
+          <span v-if="ex.backoff.rpe != null" class="text-[10px] text-slate-400">RPE {{ ex.backoff.rpe }}</span>
+          <span v-if="ex.backoff.repRange" class="text-[10px] text-slate-400">{{ ex.backoff.repRange }} reps</span>
+          <span v-if="ex.backoff.refKg != null" class="text-[10px] text-slate-400">参考 {{ ex.backoff.refKg }}kg</span>
+        </div>
+        <SetRow :index="i" :log="s"
+          :ref-kg="ex.backoff && i >= mainSets ? (ex.backoff.refKg ?? ex.refKg) : ex.refKg"
+          @update="patch => emit('updateSet', i, patch)"
+          @toggle="emit('toggleSet', i)" />
+      </template>
     </div>
-    <details v-if="ex.backoff" class="mt-2 text-xs">
-      <summary class="text-slate-500 cursor-pointer">Backoff詳細</summary>
-      <div class="mt-1 grid grid-cols-3 gap-1 text-slate-600 dark:text-slate-300">
-        <div v-if="ex.backoff.rpe != null">RPE {{ ex.backoff.rpe }}</div>
-        <div v-if="ex.backoff.percentRm != null">%RM {{ pct(ex.backoff.percentRm) }}</div>
-        <div v-if="ex.backoff.sets != null">Set {{ ex.backoff.sets }}</div>
-        <div v-if="ex.backoff.repRange">Rep {{ ex.backoff.repRange }}</div>
-        <div v-if="ex.backoff.refKg != null">参考 {{ ex.backoff.refKg }}kg</div>
-      </div>
-    </details>
     <p v-if="ex.note" class="mt-2 text-[11px] text-amber-700 dark:text-amber-400 whitespace-pre-wrap">{{ ex.note }}</p>
     <textarea v-model="log.memo" rows="2" placeholder="メモ"
       class="mt-2 w-full text-xs p-2 rounded border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950"></textarea>
   </section>
 </template>
 <script setup lang="ts">
+import { computed } from "vue";
 import SetRow from "./SetRow.vue";
 import type { Exercise, ExerciseLog, SetLog } from "../types";
-defineProps<{ ex: Exercise; log: ExerciseLog }>();
+const props = defineProps<{ ex: Exercise; log: ExerciseLog }>();
 const emit = defineEmits<{ (e: "updateSet", i: number, patch: Partial<SetLog>): void; (e: "toggleSet", i: number): void }>();
+const mainSets = computed(() => props.ex.sets ?? 1);
 function pct(v: number) { return (v * 100).toFixed(0) + "%"; }
 function fmt(sec: number) {
   const m = Math.floor(sec / 60); const s = sec % 60;
