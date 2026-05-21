@@ -1,9 +1,13 @@
 <template>
   <div v-if="week && day" class="space-y-2">
-    <router-link :to="`/week/${week.week}`" class="text-xs text-indigo-600">← WEEK {{ week.week }}</router-link>
-    <header class="sticky top-[49px] -mx-4 px-4 py-2 bg-white/95 dark:bg-slate-950/95 backdrop-blur border-b border-slate-200 dark:border-slate-800 z-[5]">
-      <p class="text-[11px] uppercase" :class="day.type === 'Upper' ? 'text-rose-500' : 'text-sky-500'">WEEK {{ week.week }} · {{ day.type }}</p>
-      <h2 class="text-base font-bold">{{ day.label }}</h2>
+    <router-link :to="`/week/${week.week}`" class="flex items-center gap-1 text-[11px] text-text2">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M9 3L5 7l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      WEEK {{ week.week }}
+    </router-link>
+    <header class="sticky top-[52px] -mx-4 px-4 py-2 bg-bg/95 backdrop-blur border-b border-bdr z-[5]">
+      <p class="text-[10px] uppercase tracking-widest font-medium"
+         :class="day.type === 'Upper' ? 'text-upper' : 'text-lower'">WEEK {{ week.week }} · {{ day.type }}</p>
+      <h2 class="text-base font-semibold text-text1">{{ day.label }}</h2>
     </header>
     <div class="pt-2">
       <ExerciseCard v-for="(ex, i) in day.exercises" :key="i" :ex="ex" :log="logFor(i, ex)"
@@ -11,7 +15,7 @@
         @toggle-set="(si) => toggle(i, si)" />
     </div>
   </div>
-  <p v-else class="text-slate-500">該当データなし</p>
+  <p v-else class="text-text2">該当データなし</p>
 </template>
 <script setup lang="ts">
 import { computed } from "vue";

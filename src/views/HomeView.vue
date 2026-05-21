@@ -1,35 +1,66 @@
 <template>
   <div class="space-y-4">
-    <section class="rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 text-white p-4 shadow">
-      <p class="text-xs opacity-80">プログラム進捗</p>
-      <p class="text-2xl font-bold mt-1 tabular-nums">{{ overall.done }} / {{ overall.total }} <span class="text-sm font-normal opacity-80">セット完了</span></p>
-      <ProgressBar :done="overall.done" :total="overall.total" class="mt-3 [&>div]:bg-white" />
+    <!-- 進捗 -->
+    <section class="rounded-lg border border-bdr bg-surface p-4">
+      <p class="text-[11px] text-text2 uppercase tracking-wider mb-1">プログラム進捗</p>
+      <div class="flex items-baseline gap-2 mb-3">
+        <span class="font-display text-5xl text-accent leading-none tabular-nums">{{ overall.done }}</span>
+        <span class="text-text2 text-sm">/ {{ overall.total }} セット</span>
+      </div>
+      <ProgressBar :done="overall.done" :total="overall.total" />
+      <p class="text-[10px] text-text2 mt-1 tabular-nums">{{ pctDone }}% 完了</p>
     </section>
 
-    <section class="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4">
-      <div class="flex items-center justify-between mb-2">
-        <h2 class="text-sm font-semibold">BIG3 現状</h2>
-        <router-link to="/profile" class="text-xs text-indigo-600">編集</router-link>
+    <!-- BIG3 -->
+    <section class="rounded-lg border border-bdr bg-surface p-4">
+      <div class="flex items-center justify-between mb-3">
+        <p class="text-[11px] text-text2 uppercase tracking-wider">BIG3 現状</p>
+        <router-link to="/profile" class="text-[11px] text-accent">編集 →</router-link>
       </div>
       <dl class="grid grid-cols-3 gap-2 text-center">
-        <div><dt class="text-[10px] text-slate-500">SQ</dt><dd class="text-lg font-bold tabular-nums">{{ p.big3.squat ?? "-" }}<span class="text-xs">kg</span></dd></div>
-        <div><dt class="text-[10px] text-slate-500">BP</dt><dd class="text-lg font-bold tabular-nums">{{ p.big3.bench ?? "-" }}<span class="text-xs">kg</span></dd></div>
-        <div><dt class="text-[10px] text-slate-500">DL</dt><dd class="text-lg font-bold tabular-nums">{{ p.big3.deadlift ?? "-" }}<span class="text-xs">kg</span></dd></div>
+        <div class="rounded bg-surface2 py-2">
+          <dt class="text-[10px] text-text2 mb-1">SQ</dt>
+          <dd class="font-display text-2xl text-text1 tabular-nums leading-none">{{ p.big3.squat ?? "—" }}<span class="text-xs text-text2 ml-0.5">kg</span></dd>
+        </div>
+        <div class="rounded bg-surface2 py-2">
+          <dt class="text-[10px] text-text2 mb-1">BP</dt>
+          <dd class="font-display text-2xl text-text1 tabular-nums leading-none">{{ p.big3.bench ?? "—" }}<span class="text-xs text-text2 ml-0.5">kg</span></dd>
+        </div>
+        <div class="rounded bg-surface2 py-2">
+          <dt class="text-[10px] text-text2 mb-1">DL</dt>
+          <dd class="font-display text-2xl text-text1 tabular-nums leading-none">{{ p.big3.deadlift ?? "—" }}<span class="text-xs text-text2 ml-0.5">kg</span></dd>
+        </div>
       </dl>
     </section>
 
-    <section class="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4">
-      <h2 class="text-sm font-semibold mb-2">栄養目標</h2>
-      <p class="text-2xl font-bold tabular-nums">{{ Math.round(p.nutrition.targetKcal || 0) }} <span class="text-xs font-normal">kcal/日</span></p>
-      <dl class="grid grid-cols-3 gap-2 mt-2 text-xs">
-        <div class="rounded bg-rose-50 dark:bg-rose-950/40 p-2 text-center"><dt class="text-rose-700 dark:text-rose-300">P</dt><dd class="font-bold tabular-nums">{{ Math.round(p.nutrition.p || 0) }}g</dd></div>
-        <div class="rounded bg-amber-50 dark:bg-amber-950/40 p-2 text-center"><dt class="text-amber-700 dark:text-amber-300">F</dt><dd class="font-bold tabular-nums">{{ Math.round(p.nutrition.f || 0) }}g</dd></div>
-        <div class="rounded bg-sky-50 dark:bg-sky-950/40 p-2 text-center"><dt class="text-sky-700 dark:text-sky-300">C</dt><dd class="font-bold tabular-nums">{{ Math.round(p.nutrition.c || 0) }}g</dd></div>
+    <!-- 栄養 -->
+    <section class="rounded-lg border border-bdr bg-surface p-4">
+      <p class="text-[11px] text-text2 uppercase tracking-wider mb-2">栄養目標</p>
+      <div class="flex items-baseline gap-1.5 mb-3">
+        <span class="font-display text-4xl text-text1 tabular-nums leading-none">{{ Math.round(p.nutrition.targetKcal || 0) }}</span>
+        <span class="text-text2 text-xs">kcal/日</span>
+      </div>
+      <dl class="grid grid-cols-3 gap-2 text-center text-xs">
+        <div class="rounded bg-surface2 py-2">
+          <dt class="text-[10px] text-text2 mb-1">タンパク質 P</dt>
+          <dd class="font-display text-xl text-text1 tabular-nums leading-none">{{ Math.round(p.nutrition.p || 0) }}<span class="text-xs text-text2">g</span></dd>
+        </div>
+        <div class="rounded bg-surface2 py-2">
+          <dt class="text-[10px] text-text2 mb-1">脂質 F</dt>
+          <dd class="font-display text-xl text-text1 tabular-nums leading-none">{{ Math.round(p.nutrition.f || 0) }}<span class="text-xs text-text2">g</span></dd>
+        </div>
+        <div class="rounded bg-surface2 py-2">
+          <dt class="text-[10px] text-text2 mb-1">炭水化物 C</dt>
+          <dd class="font-display text-xl text-text1 tabular-nums leading-none">{{ Math.round(p.nutrition.c || 0) }}<span class="text-xs text-text2">g</span></dd>
+        </div>
       </dl>
     </section>
 
-    <router-link to="/weeks" class="block w-full text-center py-3 rounded-xl bg-indigo-600 text-white font-semibold shadow active:bg-indigo-700">
-      週リストへ →
+    <router-link to="/weeks" class="flex items-center justify-center gap-2 w-full py-3.5 rounded-lg bg-accent text-bg font-bold text-sm tracking-wide active:opacity-80 transition-opacity">
+      週リストへ
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
     </router-link>
   </div>
 </template>
@@ -58,4 +89,5 @@ const overall = computed(() => {
   }
   return { done, total };
 });
+const pctDone = computed(() => overall.value.total > 0 ? Math.round(overall.value.done / overall.value.total * 100) : 0);
 </script>

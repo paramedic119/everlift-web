@@ -1,15 +1,15 @@
 <template>
-  <label class="flex items-center justify-between gap-2 py-1.5">
-    <span class="text-sm text-slate-600 dark:text-slate-300">{{ label }}</span>
-    <div class="flex items-center gap-1">
+  <label class="flex items-center justify-between gap-2 py-2.5 border-b border-bdr last:border-b-0">
+    <span class="text-sm text-text2">{{ label }}</span>
+    <div class="flex items-center gap-1.5">
       <input
         :value="modelValue ?? ''"
         @input="onInput(($event.target as HTMLInputElement).value)"
         :inputmode="step && step < 1 ? 'decimal' : 'numeric'"
         :step="step ?? 1"
         type="number"
-        class="w-24 px-2 py-2 text-right rounded border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 tabular-nums" />
-      <span v-if="unit" class="text-xs text-slate-500 w-8">{{ unit }}</span>
+        class="w-24 px-2 py-1.5 text-right rounded border border-bdr bg-surface2 text-text1 tabular-nums font-display text-lg tracking-wide focus:outline-none focus:border-accent transition-colors" />
+      <span v-if="unit" class="text-xs text-text2 w-8">{{ unit }}</span>
     </div>
   </label>
 </template>

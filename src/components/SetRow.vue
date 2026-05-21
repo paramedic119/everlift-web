@@ -1,25 +1,31 @@
 <template>
-  <div class="flex items-center gap-2 py-1.5">
-    <span class="w-8 text-xs text-slate-500 tabular-nums">#{{ index + 1 }}</span>
+  <div class="flex items-center gap-2 py-2 pl-2 pr-1 rounded-lg transition-colors"
+       :class="log.done ? 'bg-success/[0.07]' : ''">
+    <span class="w-5 shrink-0 font-display text-base leading-none text-center"
+          :class="log.done ? 'text-success' : 'text-text2'">{{ index + 1 }}</span>
     <button v-if="refKg != null" type="button"
-      class="text-xs px-2 py-1 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 active:bg-slate-200"
-      @click="fillRef">参考 {{ refKg }}kg</button>
+      class="text-xs px-2 py-1 rounded border border-bdr text-text2 active:border-accent active:text-accent shrink-0 transition-colors tabular-nums font-display"
+      @click="fillRef">{{ refKg }}</button>
     <input
       :value="log.kg ?? ''"
       @input="onKg(($event.target as HTMLInputElement).value)"
-      inputmode="decimal" placeholder="kg"
-      class="w-20 px-2 py-2 rounded border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 text-base tabular-nums" />
-    <span class="text-slate-400">×</span>
+      inputmode="decimal" placeholder="—"
+      class="w-20 shrink-0 px-2 py-2 rounded border bg-surface2 text-base tabular-nums text-center font-display tracking-wide focus:outline-none focus:border-accent transition-colors"
+      :class="log.done ? 'border-bdr text-text2' : 'border-bdr text-text1'" />
+    <span class="text-text2 text-xs shrink-0">×</span>
     <input
       :value="log.reps ?? ''"
       @input="onReps(($event.target as HTMLInputElement).value)"
-      inputmode="numeric" placeholder="reps"
-      class="w-16 px-2 py-2 rounded border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 text-base tabular-nums" />
+      inputmode="numeric" placeholder="—"
+      class="w-16 shrink-0 px-2 py-2 rounded border bg-surface2 text-base tabular-nums text-center font-display tracking-wide focus:outline-none focus:border-accent transition-colors"
+      :class="log.done ? 'border-bdr text-text2' : 'border-bdr text-text1'" />
     <button type="button"
       @click="emit('toggle')"
-      class="ml-auto w-10 h-10 rounded-full flex items-center justify-center text-lg"
-      :class="log.done ? 'bg-emerald-500 text-white' : 'bg-slate-200 dark:bg-slate-800 text-slate-500'">
-      ✓
+      class="shrink-0 ml-auto w-9 h-9 rounded-full flex items-center justify-center transition-all"
+      :class="log.done ? 'bg-success text-bg' : 'border border-bdr text-text2'">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+        <path d="M2.5 7l3 3L11.5 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
     </button>
   </div>
 </template>

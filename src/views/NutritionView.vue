@@ -1,34 +1,58 @@
 <template>
   <div class="space-y-4">
     <div class="flex items-center justify-between">
-      <h2 class="text-lg font-bold">栄養目標</h2>
-      <router-link to="/profile" class="text-xs text-indigo-600">編集 →</router-link>
+      <p class="text-[11px] text-text2 uppercase tracking-wider">栄養目標</p>
+      <router-link to="/profile" class="text-[11px] text-accent">編集 →</router-link>
     </div>
-    <section class="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4">
-      <p class="text-xs text-slate-500">1日の摂取目標</p>
-      <p class="text-3xl font-bold tabular-nums">{{ Math.round(n.targetKcal || 0) }} <span class="text-sm font-normal">kcal</span></p>
-      <p v-if="n.maintenanceKcal" class="text-[11px] text-slate-500 mt-1">維持カロリー {{ Math.round(n.maintenanceKcal) }} kcal + {{ Math.round(n.overKcal || 0) }} kcal</p>
+
+    <section class="rounded-lg border border-bdr bg-surface p-4">
+      <p class="text-[11px] text-text2 mb-1">1日の摂取目標</p>
+      <div class="flex items-baseline gap-1.5">
+        <span class="font-display text-5xl text-text1 tabular-nums leading-none">{{ Math.round(n.targetKcal || 0) }}</span>
+        <span class="text-text2 text-sm">kcal</span>
+      </div>
+      <p v-if="n.maintenanceKcal" class="text-[10px] text-text2 mt-1">
+        維持 <span class="font-display text-sm text-text1">{{ Math.round(n.maintenanceKcal) }}</span> kcal
+        + <span class="font-display text-sm text-accent">{{ Math.round(n.overKcal || 0) }}</span> kcal
+      </p>
     </section>
+
     <section class="grid grid-cols-3 gap-2">
-      <div class="rounded-xl bg-rose-100 dark:bg-rose-950/50 p-3 text-center">
-        <p class="text-[10px] text-rose-700 dark:text-rose-300">タンパク質 P</p>
-        <p class="text-2xl font-bold tabular-nums text-rose-700 dark:text-rose-200">{{ Math.round(n.p || 0) }}<span class="text-xs">g</span></p>
+      <div class="rounded-lg border border-bdr bg-surface p-3 text-center">
+        <p class="text-[10px] text-text2 mb-1">タンパク質</p>
+        <p class="text-[10px] text-text2 mb-2">P</p>
+        <p class="font-display text-2xl text-text1 tabular-nums leading-none">{{ Math.round(n.p || 0) }}<span class="text-xs text-text2">g</span></p>
       </div>
-      <div class="rounded-xl bg-amber-100 dark:bg-amber-950/50 p-3 text-center">
-        <p class="text-[10px] text-amber-700 dark:text-amber-300">脂質 F</p>
-        <p class="text-2xl font-bold tabular-nums text-amber-700 dark:text-amber-200">{{ Math.round(n.f || 0) }}<span class="text-xs">g</span></p>
+      <div class="rounded-lg border border-bdr bg-surface p-3 text-center">
+        <p class="text-[10px] text-text2 mb-1">脂質</p>
+        <p class="text-[10px] text-text2 mb-2">F</p>
+        <p class="font-display text-2xl text-text1 tabular-nums leading-none">{{ Math.round(n.f || 0) }}<span class="text-xs text-text2">g</span></p>
       </div>
-      <div class="rounded-xl bg-sky-100 dark:bg-sky-950/50 p-3 text-center">
-        <p class="text-[10px] text-sky-700 dark:text-sky-300">炭水化物 C</p>
-        <p class="text-2xl font-bold tabular-nums text-sky-700 dark:text-sky-200">{{ Math.round(n.c || 0) }}<span class="text-xs">g</span></p>
+      <div class="rounded-lg border border-bdr bg-surface p-3 text-center">
+        <p class="text-[10px] text-text2 mb-1">炭水化物</p>
+        <p class="text-[10px] text-text2 mb-2">C</p>
+        <p class="font-display text-2xl text-text1 tabular-nums leading-none">{{ Math.round(n.c || 0) }}<span class="text-xs text-text2">g</span></p>
       </div>
     </section>
-    <section class="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4 text-sm space-y-1">
-      <p><span class="text-slate-500">1食あたりP目安:</span> <b class="tabular-nums">{{ n.proteinPerMeal }}g</b></p>
-      <p><span class="text-slate-500">モード:</span> {{ p.profile.mode }}</p>
-      <p v-if="p.profile.heightCm || p.profile.weightKg"><span class="text-slate-500">身長/体重:</span> {{ p.profile.heightCm }}cm / {{ p.profile.weightKg }}kg</p>
+
+    <section class="rounded-lg border border-bdr bg-surface p-4 space-y-2.5">
+      <div class="flex items-center justify-between">
+        <span class="text-sm text-text2">1食あたりP目安</span>
+        <span class="font-display text-xl text-text1 tabular-nums leading-none">{{ n.proteinPerMeal }}<span class="text-xs text-text2 ml-0.5">g</span></span>
+      </div>
+      <div class="flex items-center justify-between border-t border-bdr pt-2.5">
+        <span class="text-sm text-text2">モード</span>
+        <span class="text-sm text-text1">{{ p.profile.mode }}</span>
+      </div>
+      <div v-if="p.profile.heightCm || p.profile.weightKg" class="flex items-center justify-between border-t border-bdr pt-2.5">
+        <span class="text-sm text-text2">身長 / 体重</span>
+        <span class="font-display text-sm text-text1 tabular-nums">{{ p.profile.heightCm }}cm / {{ p.profile.weightKg }}kg</span>
+      </div>
     </section>
-    <p class="text-[11px] text-slate-500 leading-relaxed">※ WEEK1-4はボリュームが多いため、体重が減ってしまう場合は炭水化物を目標より10%増を目安に。</p>
+
+    <p class="text-[11px] text-text2 leading-relaxed border-l-2 border-bdr pl-3">
+      WEEK1-4はボリュームが多いため、体重が減る場合は炭水化物を目標より10%増を目安に。
+    </p>
   </div>
 </template>
 <script setup lang="ts">

@@ -1,33 +1,51 @@
 <template>
-  <section class="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-3 mb-3 shadow-sm">
-    <header class="flex items-baseline gap-2 mb-2">
-      <span v-if="ex.part" class="text-[10px] px-1.5 py-0.5 rounded bg-indigo-100 text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300 shrink-0">{{ ex.part }}</span>
-      <div class="flex-1 min-w-0">
+  <section class="rounded-lg border border-bdr bg-surface p-3 mb-3">
+    <header class="flex items-center gap-2 mb-3">
+      <span v-if="ex.part" class="text-[10px] px-1.5 py-0.5 rounded bg-accent/15 text-accent shrink-0 font-medium">{{ ex.part }}</span>
+      <div class="flex-1 min-w-0 relative">
         <template v-if="alternatives.length > 1">
           <select :value="displayName"
             @change="onChoose(($event.target as HTMLSelectElement).value)"
-            class="font-semibold text-sm bg-transparent border-b border-dashed border-indigo-400 dark:border-indigo-500 pr-1 w-full truncate">
-            <option v-for="opt in alternatives" :key="opt" :value="opt">{{ opt }}</option>
+            class="font-semibold text-sm bg-transparent text-text1 border-b border-dashed border-accent/40 pr-5 w-full appearance-none focus:outline-none focus:border-accent cursor-pointer">
+            <option v-for="opt in alternatives" :key="opt" :value="opt" class="bg-surface2 text-text1">{{ opt }}</option>
           </select>
+          <svg class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-3 text-accent pointer-events-none" viewBox="0 0 12 12" fill="none">
+            <path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
         </template>
-        <h3 v-else class="font-semibold text-sm">{{ displayName }}</h3>
+        <h3 v-else class="font-semibold text-sm text-text1">{{ displayName }}</h3>
       </div>
     </header>
-    <dl class="grid grid-cols-4 gap-y-1 gap-x-2 text-[11px] text-slate-500 dark:text-slate-400 mb-2">
-      <div v-if="ex.rpe != null"><dt class="inline">RPE</dt><dd class="inline ml-1 text-slate-700 dark:text-slate-200 tabular-nums">{{ ex.rpe }}</dd></div>
-      <div v-if="ex.percentRm != null"><dt class="inline">%RM</dt><dd class="inline ml-1 text-slate-700 dark:text-slate-200 tabular-nums">{{ pct(ex.percentRm) }}</dd></div>
-      <div v-if="ex.sets != null"><dt class="inline">Set</dt><dd class="inline ml-1 text-slate-700 dark:text-slate-200 tabular-nums">{{ ex.sets }}</dd></div>
-      <div v-if="ex.repRange"><dt class="inline">Rep</dt><dd class="inline ml-1 text-slate-700 dark:text-slate-200">{{ ex.repRange }}</dd></div>
-      <div v-if="ex.intervalSec"><dt class="inline">Int</dt><dd class="inline ml-1 text-slate-700 dark:text-slate-200">{{ fmt(ex.intervalSec) }}</dd></div>
-      <div v-if="mainRefKg != null"><dt class="inline">参考</dt><dd class="inline ml-1 text-slate-700 dark:text-slate-200 tabular-nums">{{ mainRefKg }}kg</dd></div>
-    </dl>
-    <div class="border-t border-slate-100 dark:border-slate-800 pt-1">
+
+    <div class="flex flex-wrap gap-x-3 gap-y-1 mb-3">
+      <span v-if="ex.rpe != null" class="text-[11px]">
+        <span class="text-text2">RPE </span><span class="font-display text-sm text-text1">{{ ex.rpe }}</span>
+      </span>
+      <span v-if="ex.percentRm != null" class="text-[11px]">
+        <span class="text-text2">%RM </span><span class="font-display text-sm text-text1">{{ pct(ex.percentRm) }}</span>
+      </span>
+      <span v-if="ex.sets != null" class="text-[11px]">
+        <span class="text-text2">×</span><span class="font-display text-sm text-text1">{{ ex.sets }}</span>
+      </span>
+      <span v-if="ex.repRange" class="text-[11px]">
+        <span class="font-display text-sm text-text1">{{ ex.repRange }}</span><span class="text-text2"> rep</span>
+      </span>
+      <span v-if="ex.intervalSec" class="text-[11px]">
+        <span class="text-text2">Int </span><span class="font-display text-sm text-text1">{{ fmt(ex.intervalSec) }}</span>
+      </span>
+      <span v-if="mainRefKg != null" class="text-[11px]">
+        <span class="text-text2">参考 </span><span class="font-display text-sm text-accent">{{ mainRefKg }}kg</span>
+      </span>
+    </div>
+
+    <div class="border-t border-bdr pt-2 space-y-0.5">
       <template v-for="(s, i) in log.sets" :key="i">
-        <div v-if="ex.backoff && i === mainSets" class="flex items-center gap-2 mt-2 mb-1">
-          <span class="text-[10px] px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-500">Backoff</span>
-          <span v-if="ex.backoff.rpe != null" class="text-[10px] text-slate-400">RPE {{ ex.backoff.rpe }}</span>
-          <span v-if="ex.backoff.repRange" class="text-[10px] text-slate-400">{{ ex.backoff.repRange }} reps</span>
-          <span v-if="backoffRefKg != null" class="text-[10px] text-slate-400">参考 {{ backoffRefKg }}kg</span>
+        <div v-if="ex.backoff && i === mainSets" class="flex items-center gap-2 pt-2 pb-1">
+          <div class="flex-1 border-t border-dashed border-bdr"></div>
+          <span class="text-[10px] px-1.5 py-0.5 rounded border border-bdr text-text2 shrink-0">BACKOFF</span>
+          <span v-if="ex.backoff.repRange" class="text-[10px] text-text2">{{ ex.backoff.repRange }} rep</span>
+          <span v-if="backoffRefKg != null" class="text-[10px] text-text2">参考 <span class="text-accent">{{ backoffRefKg }}kg</span></span>
+          <div class="flex-1 border-t border-dashed border-bdr"></div>
         </div>
         <SetRow :index="i" :log="s"
           :ref-kg="ex.backoff && i >= mainSets ? backoffRefKg : mainRefKg"
@@ -35,9 +53,10 @@
           @toggle="emit('toggleSet', i)" />
       </template>
     </div>
-    <p v-if="ex.note" class="mt-2 text-[11px] text-amber-700 dark:text-amber-400 whitespace-pre-wrap">{{ ex.note }}</p>
-    <textarea v-model="log.memo" rows="2" placeholder="メモ"
-      class="mt-2 w-full text-xs p-2 rounded border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950"></textarea>
+
+    <p v-if="ex.note" class="mt-2 text-[11px] text-accent2/90 whitespace-pre-wrap border-l-2 border-accent2/40 pl-2">{{ ex.note }}</p>
+    <textarea v-model="log.memo" rows="2" placeholder="メモ…"
+      class="mt-3 w-full text-xs p-2 rounded border border-bdr bg-surface2 text-text1 placeholder:text-text2 focus:outline-none focus:border-accent transition-colors resize-none"></textarea>
   </section>
 </template>
 <script setup lang="ts">

@@ -1,15 +1,22 @@
 <template>
   <div class="space-y-4">
-    <h2 class="text-lg font-bold">設定</h2>
-    <section class="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4 space-y-3">
-      <button @click="doExport" class="w-full py-3 rounded-lg bg-indigo-600 text-white font-semibold">記録をエクスポート (JSON)</button>
+    <p class="text-[11px] text-text2 uppercase tracking-wider">設定</p>
+    <section class="rounded-lg border border-bdr bg-surface p-4 space-y-3">
+      <button @click="doExport"
+        class="w-full py-3 rounded-lg border border-accent text-accent font-semibold text-sm active:bg-accent/10 transition-colors">
+        記録をエクスポート (JSON)
+      </button>
       <label class="block">
-        <span class="block text-sm mb-1">記録をインポート</span>
-        <input type="file" accept="application/json" @change="onImport" class="block w-full text-sm" />
+        <span class="block text-sm text-text2 mb-2">記録をインポート</span>
+        <input type="file" accept="application/json" @change="onImport"
+          class="block w-full text-sm text-text2 file:mr-3 file:py-1.5 file:px-3 file:rounded file:border file:border-bdr file:bg-surface2 file:text-text2 file:text-xs" />
       </label>
-      <button @click="doReset" class="w-full py-3 rounded-lg bg-rose-600 text-white font-semibold">全記録を削除</button>
+      <button @click="doReset"
+        class="w-full py-3 rounded-lg border border-accent2/50 text-accent2 font-semibold text-sm active:bg-accent2/10 transition-colors">
+        全記録を削除
+      </button>
     </section>
-    <p class="text-[11px] text-slate-500">データはこの端末のブラウザ (localStorage) に保存されます。</p>
+    <p class="text-[11px] text-text2 border-l-2 border-bdr pl-3">データはこの端末のブラウザ (localStorage) に保存されます。</p>
   </div>
 </template>
 <script setup lang="ts">

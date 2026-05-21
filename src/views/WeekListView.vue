@@ -1,21 +1,24 @@
 <template>
-  <div class="space-y-3">
-    <h2 class="text-sm font-semibold text-slate-500">9週間プログラム</h2>
+  <div class="space-y-2">
+    <p class="text-[11px] text-text2 uppercase tracking-wider mb-3">9週間プログラム</p>
     <router-link v-for="w in weeks" :key="w.week" :to="`/week/${w.week}`"
-      class="block rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4 active:scale-[0.99] transition">
-      <div class="flex items-baseline justify-between">
-        <h3 class="font-bold">WEEK {{ String(w.week).padStart(2, "0") }}</h3>
-        <span class="text-xs text-slate-500">{{ w.days.length }} Days</span>
+      class="flex items-center gap-4 rounded-lg border border-bdr bg-surface p-4 active:opacity-70 transition-opacity">
+      <div class="shrink-0">
+        <p class="font-display text-3xl text-text1 leading-none tabular-nums">{{ String(w.week).padStart(2, "0") }}</p>
+        <p class="text-[10px] text-text2 mt-0.5">WEEK</p>
       </div>
-      <dl class="grid grid-cols-3 gap-2 text-center mt-2 text-xs">
-        <div><dt class="text-slate-500">Sets</dt><dd class="font-semibold tabular-nums">{{ summaryMap.get(w.week)?.totalSets ?? "-" }}</dd></div>
-        <div><dt class="text-slate-500">avg RPE</dt><dd class="font-semibold tabular-nums">{{ fmtRpe(summaryMap.get(w.week)?.avgRpe) }}</dd></div>
-        <div><dt class="text-slate-500">Reps</dt><dd class="font-semibold tabular-nums">{{ summaryMap.get(w.week)?.totalReps ?? "-" }}</dd></div>
-      </dl>
-      <div class="mt-3">
+      <div class="flex-1 min-w-0">
+        <div class="flex gap-3 text-[11px] mb-2">
+          <span><span class="text-text2">Sets </span><span class="font-display text-sm text-text1 tabular-nums">{{ summaryMap.get(w.week)?.totalSets ?? "—" }}</span></span>
+          <span><span class="text-text2">RPE </span><span class="font-display text-sm text-text1 tabular-nums">{{ fmtRpe(summaryMap.get(w.week)?.avgRpe) }}</span></span>
+          <span><span class="text-text2">Reps </span><span class="font-display text-sm text-text1 tabular-nums">{{ summaryMap.get(w.week)?.totalReps ?? "—" }}</span></span>
+        </div>
         <ProgressBar :done="completion(w).done" :total="completion(w).total" />
-        <p class="text-[11px] text-slate-500 mt-1 tabular-nums">{{ completion(w).done }}/{{ completion(w).total }} セット完了</p>
+        <p class="text-[10px] text-text2 mt-1 tabular-nums">{{ completion(w).done }}/{{ completion(w).total }} セット</p>
       </div>
+      <svg class="shrink-0 w-4 h-4 text-text2" viewBox="0 0 16 16" fill="none">
+        <path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
     </router-link>
   </div>
 </template>
