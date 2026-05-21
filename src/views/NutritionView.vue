@@ -1,10 +1,13 @@
 <template>
   <div class="space-y-4">
-    <h2 class="text-lg font-bold">栄養目標</h2>
+    <div class="flex items-center justify-between">
+      <h2 class="text-lg font-bold">栄養目標</h2>
+      <router-link to="/profile" class="text-xs text-indigo-600">編集 →</router-link>
+    </div>
     <section class="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4">
       <p class="text-xs text-slate-500">1日の摂取目標</p>
       <p class="text-3xl font-bold tabular-nums">{{ Math.round(n.targetKcal || 0) }} <span class="text-sm font-normal">kcal</span></p>
-      <p class="text-[11px] text-slate-500 mt-1">維持カロリー {{ n.maintenanceKcal }} kcal + {{ Math.round(n.overKcal || 0) }} kcal</p>
+      <p v-if="n.maintenanceKcal" class="text-[11px] text-slate-500 mt-1">維持カロリー {{ Math.round(n.maintenanceKcal) }} kcal + {{ Math.round(n.overKcal || 0) }} kcal</p>
     </section>
     <section class="grid grid-cols-3 gap-2">
       <div class="rounded-xl bg-rose-100 dark:bg-rose-950/50 p-3 text-center">
@@ -21,18 +24,17 @@
       </div>
     </section>
     <section class="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4 text-sm space-y-1">
-      <p><span class="text-slate-500">1食あたりタンパク質目安:</span> <b class="tabular-nums">{{ n.proteinPerMeal }}g</b></p>
+      <p><span class="text-slate-500">1食あたりP目安:</span> <b class="tabular-nums">{{ n.proteinPerMeal }}g</b></p>
       <p><span class="text-slate-500">モード:</span> {{ p.profile.mode }}</p>
-      <p><span class="text-slate-500">日常生活強度:</span> {{ p.profile.dailyIntensity }}</p>
-      <p><span class="text-slate-500">トレーニング歴:</span> {{ p.profile.trainingLevel }}</p>
-      <p><span class="text-slate-500">身長/体重:</span> {{ p.profile.heightCm }}cm / {{ p.profile.weightKg }}kg</p>
+      <p v-if="p.profile.heightCm || p.profile.weightKg"><span class="text-slate-500">身長/体重:</span> {{ p.profile.heightCm }}cm / {{ p.profile.weightKg }}kg</p>
     </section>
     <p class="text-[11px] text-slate-500 leading-relaxed">※ WEEK1-4はボリュームが多いため、体重が減ってしまう場合は炭水化物を目標より10%増を目安に。</p>
   </div>
 </template>
 <script setup lang="ts">
-import personalRaw from "../data/personal.json";
-import type { Personal } from "../types";
-const p = personalRaw as Personal;
-const n = p.nutrition;
+import { computed } from "vue";
+import { usePersonal } from "../stores/personal";
+const personal = usePersonal();
+const p = computed(() => personal.state.data);
+const n = computed(() => p.value.nutrition);
 </script>

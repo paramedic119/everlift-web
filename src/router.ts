@@ -8,6 +8,7 @@ export const router = createRouter({
     { path: "/week/:week", component: () => import("./views/WeekDetailView.vue"), props: true },
     { path: "/week/:week/day/:day", component: () => import("./views/DayView.vue"), props: true },
     { path: "/nutrition", component: () => import("./views/NutritionView.vue") },
+    { path: "/profile", component: () => import("./views/ProfileView.vue") },
     { path: "/settings", component: () => import("./views/SettingsView.vue") },
   ],
   scrollBehavior() { return { top: 0 }; },

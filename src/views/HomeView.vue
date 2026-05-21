@@ -7,21 +7,24 @@
     </section>
 
     <section class="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4">
-      <h2 class="text-sm font-semibold mb-2">BIG3 現状</h2>
+      <div class="flex items-center justify-between mb-2">
+        <h2 class="text-sm font-semibold">BIG3 現状</h2>
+        <router-link to="/profile" class="text-xs text-indigo-600">編集</router-link>
+      </div>
       <dl class="grid grid-cols-3 gap-2 text-center">
-        <div><dt class="text-[10px] text-slate-500">SQ</dt><dd class="text-lg font-bold tabular-nums">{{ personal.big3.squat }}<span class="text-xs">kg</span></dd></div>
-        <div><dt class="text-[10px] text-slate-500">BP</dt><dd class="text-lg font-bold tabular-nums">{{ personal.big3.bench }}<span class="text-xs">kg</span></dd></div>
-        <div><dt class="text-[10px] text-slate-500">DL</dt><dd class="text-lg font-bold tabular-nums">{{ personal.big3.deadlift }}<span class="text-xs">kg</span></dd></div>
+        <div><dt class="text-[10px] text-slate-500">SQ</dt><dd class="text-lg font-bold tabular-nums">{{ p.big3.squat ?? "-" }}<span class="text-xs">kg</span></dd></div>
+        <div><dt class="text-[10px] text-slate-500">BP</dt><dd class="text-lg font-bold tabular-nums">{{ p.big3.bench ?? "-" }}<span class="text-xs">kg</span></dd></div>
+        <div><dt class="text-[10px] text-slate-500">DL</dt><dd class="text-lg font-bold tabular-nums">{{ p.big3.deadlift ?? "-" }}<span class="text-xs">kg</span></dd></div>
       </dl>
     </section>
 
     <section class="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4">
       <h2 class="text-sm font-semibold mb-2">栄養目標</h2>
-      <p class="text-2xl font-bold tabular-nums">{{ Math.round(personal.nutrition.targetKcal || 0) }} <span class="text-xs font-normal">kcal/日</span></p>
+      <p class="text-2xl font-bold tabular-nums">{{ Math.round(p.nutrition.targetKcal || 0) }} <span class="text-xs font-normal">kcal/日</span></p>
       <dl class="grid grid-cols-3 gap-2 mt-2 text-xs">
-        <div class="rounded bg-rose-50 dark:bg-rose-950/40 p-2 text-center"><dt class="text-rose-700 dark:text-rose-300">P</dt><dd class="font-bold tabular-nums">{{ Math.round(personal.nutrition.p || 0) }}g</dd></div>
-        <div class="rounded bg-amber-50 dark:bg-amber-950/40 p-2 text-center"><dt class="text-amber-700 dark:text-amber-300">F</dt><dd class="font-bold tabular-nums">{{ Math.round(personal.nutrition.f || 0) }}g</dd></div>
-        <div class="rounded bg-sky-50 dark:bg-sky-950/40 p-2 text-center"><dt class="text-sky-700 dark:text-sky-300">C</dt><dd class="font-bold tabular-nums">{{ Math.round(personal.nutrition.c || 0) }}g</dd></div>
+        <div class="rounded bg-rose-50 dark:bg-rose-950/40 p-2 text-center"><dt class="text-rose-700 dark:text-rose-300">P</dt><dd class="font-bold tabular-nums">{{ Math.round(p.nutrition.p || 0) }}g</dd></div>
+        <div class="rounded bg-amber-50 dark:bg-amber-950/40 p-2 text-center"><dt class="text-amber-700 dark:text-amber-300">F</dt><dd class="font-bold tabular-nums">{{ Math.round(p.nutrition.f || 0) }}g</dd></div>
+        <div class="rounded bg-sky-50 dark:bg-sky-950/40 p-2 text-center"><dt class="text-sky-700 dark:text-sky-300">C</dt><dd class="font-bold tabular-nums">{{ Math.round(p.nutrition.c || 0) }}g</dd></div>
       </dl>
     </section>
 
@@ -33,14 +36,15 @@
 <script setup lang="ts">
 import { computed } from "vue";
 import ProgressBar from "../components/ProgressBar.vue";
-import personalRaw from "../data/personal.json";
 import program from "../data/program.json";
 import { useProgress } from "../stores/progress";
-import type { Personal, Week } from "../types";
+import { usePersonal } from "../stores/personal";
+import type { Week } from "../types";
 
-const personal = personalRaw as Personal;
 const weeks = program as Week[];
 const prog = useProgress();
+const personal = usePersonal();
+const p = computed(() => personal.state.data);
 
 const overall = computed(() => {
   let done = 0, total = 0;
