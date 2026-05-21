@@ -10,7 +10,7 @@
       <div v-if="ex.sets != null"><dt class="inline">Set</dt><dd class="inline ml-1 text-slate-700 dark:text-slate-200 tabular-nums">{{ ex.sets }}</dd></div>
       <div v-if="ex.repRange"><dt class="inline">Rep</dt><dd class="inline ml-1 text-slate-700 dark:text-slate-200">{{ ex.repRange }}</dd></div>
       <div v-if="ex.intervalSec"><dt class="inline">Int</dt><dd class="inline ml-1 text-slate-700 dark:text-slate-200">{{ fmt(ex.intervalSec) }}</dd></div>
-      <div v-if="ex.refKg != null"><dt class="inline">参考</dt><dd class="inline ml-1 text-slate-700 dark:text-slate-200 tabular-nums">{{ ex.refKg }}kg</dd></div>
+      <div v-if="mainRefKg != null"><dt class="inline">参考</dt><dd class="inline ml-1 text-slate-700 dark:text-slate-200 tabular-nums">{{ mainRefKg }}kg</dd></div>
     </dl>
     <div class="border-t border-slate-100 dark:border-slate-800 pt-1">
       <template v-for="(s, i) in log.sets" :key="i">
@@ -18,10 +18,10 @@
           <span class="text-[10px] px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-500">Backoff</span>
           <span v-if="ex.backoff.rpe != null" class="text-[10px] text-slate-400">RPE {{ ex.backoff.rpe }}</span>
           <span v-if="ex.backoff.repRange" class="text-[10px] text-slate-400">{{ ex.backoff.repRange }} reps</span>
-          <span v-if="ex.backoff.refKg != null" class="text-[10px] text-slate-400">参考 {{ ex.backoff.refKg }}kg</span>
+          <span v-if="backoffRefKg != null" class="text-[10px] text-slate-400">参考 {{ backoffRefKg }}kg</span>
         </div>
         <SetRow :index="i" :log="s"
-          :ref-kg="ex.backoff && i >= mainSets ? (ex.backoff.refKg ?? ex.refKg) : ex.refKg"
+          :ref-kg="ex.backoff && i >= mainSets ? backoffRefKg : mainRefKg"
           @update="patch => emit('updateSet', i, patch)"
           @toggle="emit('toggleSet', i)" />
       </template>
@@ -34,10 +34,18 @@
 <script setup lang="ts">
 import { computed } from "vue";
 import SetRow from "./SetRow.vue";
+import { usePersonal } from "../stores/personal";
+import { calcRefKg, calcBackoffRefKg } from "../utils/calcRefKg";
 import type { Exercise, ExerciseLog, SetLog } from "../types";
+
 const props = defineProps<{ ex: Exercise; log: ExerciseLog }>();
 const emit = defineEmits<{ (e: "updateSet", i: number, patch: Partial<SetLog>): void; (e: "toggleSet", i: number): void }>();
+
+const personal = usePersonal();
 const mainSets = computed(() => props.ex.sets ?? 1);
+const mainRefKg = computed(() => calcRefKg(props.ex, personal.state.data));
+const backoffRefKg = computed(() => calcBackoffRefKg(props.ex, personal.state.data));
+
 function pct(v: number) { return (v * 100).toFixed(0) + "%"; }
 function fmt(sec: number) {
   const m = Math.floor(sec / 60); const s = sec % 60;
